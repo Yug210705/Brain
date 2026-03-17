@@ -8,10 +8,10 @@ A minimal and modern setup to get **React** running with **Vite**, featuring fas
 
 This template provides a lightweight foundation for building React applications with:
 
-- ⚡ Fast development using Vite
-- 🔥 Hot Module Replacement (HMR)
-- ✅ ESLint for code quality
-- 🧩 Official React plugin support
+- ⚡ Fast development using Vite  
+- 🔥 Hot Module Replacement (HMR)  
+- ✅ ESLint for code quality  
+- 🧩 Official React plugin support  
 
 ---
 
@@ -20,10 +20,10 @@ This template provides a lightweight foundation for building React applications 
 Two official plugins are supported for React integration:
 
 - **[@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react)**  
-  Uses **Babel** (or **oxc** with rolldown-vite) for Fast Refresh.
+  Uses **Babel** (or **oxc** with rolldown-vite) for Fast Refresh  
 
 - **[@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc)**  
-  Uses **SWC** for faster builds and Fast Refresh.
+  Uses **SWC** for faster builds and Fast Refresh  
 
 ---
 
@@ -36,30 +36,16 @@ To enable it, refer to the official documentation:
 
 ---
 
-## ⚙️ ESLint Configuration
-
-ESLint is pre-configured to help maintain clean and consistent code.
-
-For production-level applications, it is recommended to:
-
-- Use **TypeScript**
-- Enable **type-aware linting**
-
-You can explore the official TypeScript template here:  
-👉 https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
-
----
-
 ## 📌 Summary
 
 This setup is ideal for:
 
-- Quick project bootstrapping
-- Learning React with modern tooling
-- Building scalable frontend applications
+- Quick project bootstrapping  
+- Learning React with modern tooling  
+- Building scalable frontend applications  
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the MIT License.
+MIT License
