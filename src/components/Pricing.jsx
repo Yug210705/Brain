@@ -49,55 +49,61 @@ const MarkerUnderline = ({ className = "" }) => {
 const Pricing = () => {
     const plans = [
         {
-            title: "CIO as a Service",
-            price: "$7,000",
-            frequency: "Starting / Month",
-            description: "Get C-level IT leadership without hiring full-time. Strategy, culture, systems, cybersecurity — all led with hands-on involvement and clear communication.",
+            title: "Strategic Advisor",
+            price: "Starting at $5,000 per month",
+            frequency: "Approximately 20 hours per month",
             features: [
-                "Advisory & decision support",
-                "Team leadership & coaching",
-                "System reviews & recommendations",
-                "Ongoing strategic roadmap execution",
-                "Direct collaboration with the executive team"
+                "Advisory and Decision Support",
+                <React.Fragment>Rapid IT Health Check Assessment (<a href="/ITservices" className="text-[#348DF0] hover:underline">link to IT Health Assessment page</a>)</React.Fragment>,
+                "IT Strategy/Roadmap evaluation",
+                "System Reviews and Recommendations",
+                "Direct Collaboration with the Executive Team"
             ],
-            buttonText: "Get Started Now",
-            isPopular: false, // Keeps card background white
-            showBadge: true,  // Displays the badge
+            description: "Provides executive level guidance to help leaders understand the strengths and weaknesses of their IT function.",
+            outcomes: [
+                "Clear understanding of the current state of IT.",
+                "Business/IT Strategy Alignment Recommendations.",
+                "Improved decision making capabilities related to IT Systems"
+            ]
         },
         {
-            title: "CIO Operating System Assessment",
-            price: "$25,000",
-            frequency: "Starting",
-            description: "A structured 3–4 month engagement designed to stabilize, strengthen, and scale your IT organization.\nClear findings. No jargon. Actionable next steps.",
+            title: "CIO Advisor",
+            price: "Starting at $7,500 per month",
+            frequency: "Approximately 30 hours per month",
             features: [
-                "Risk & Performance Scorecard",
-                "Executive IT Summary",
-                "Prioritized Issues List",
-                "Updated IT & Security Policies",
-                "IT Compliance Dashboard",
-                "90-Day Action Plan",
-                "Capability Gap Assessment",
-                "1-Year IT Roadmap"
+                <React.Fragment><span className="font-semibold text-white">Includes everything in the Strategic Advisor offer plus:</span></React.Fragment>,
+                "IT Strategy planning and execution assistance",
+                "Monthly Executive Calls",
+                "Monthly Working Sessions",
+                "Monthly Risk Reports",
+                "Quarterly Business Reviews",
+                "Annual Board Presentation Support",
+                <React.Fragment>Utilizes the CIO Operating System framework (<a href="/cio-operating" className="text-[#348DF0] hover:underline">link to CIO Operating System page</a>)</React.Fragment>
             ],
-            buttonText: "Get Started Now",
-            isPopular: true, // Card is blue
-            showBadge: true,
+            description: "Increased involvement for to more effectively monitor risks and ensure IT is helping the organization meet its business objectives.",
+            outcomes: [
+                "On-going Risk reviews and recommendations",
+                "Audit readiness",
+                "Reduced operational and regulatory risk"
+            ]
         },
         {
-            title: "IT Health Check",
-            price: "$5,000",
-            frequency: "Starting",
-            description: "A fast 2–3 week diagnostic that reveals the health of your IT environment. See what's working, what's failing, and where your highest-risk blind spots are.",
+            title: "Virtual CIO",
+            price: "Starting at $15,000 per month",
+            frequency: "Approximately 60 hours per month",
             features: [
-                "Rapid IT environment review",
-                "Security & compliance risk scan",
-                "Technology & process gap identification",
-                "Prioritized recommendations",
-                "Executive-ready summary findings"
+                <React.Fragment><span className="font-semibold text-white">Includes everything in Strategic Advisor and CIO Advisor plus:</span></React.Fragment>,
+                "Ad hoc advisory hours",
+                "Weekly Executive Calls",
+                "Mentoring to senior IT resources",
+                "Vendor Management framework"
             ],
-            buttonText: "Get Started Now",
-            isPopular: false,
-            showBadge: false,
+            description: "Full-scale CIO leadership as part of your executive team. Strategic direction and operational oversight, program execution, board reporting, and long-term transformation.",
+            outcomes: [
+                <React.Fragment>Documented CIO Operating System Assessment (<a href="/cio-operating" className="text-[#348DF0] hover:underline">link to CIO Operating System page</a>)</React.Fragment>,
+                "Improved IT strategy planning and execution",
+                "Improved vendor management functions"
+            ]
         },
     ];
 
@@ -122,90 +128,85 @@ const Pricing = () => {
                         Pricing
                     </span>
                     <h2 className="max-w-5xl mx-auto mb-10 text-4xl font-bold leading-[1.2] md:text-5xl text-black">
-                        <span className="text-gray-600 font-semibold font-[Inter]">Simple,</span>{" "}
+                        <span className="text-gray-600 font-semibold font-[Inter]">Flexible</span>{" "}
                         <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
-                            <span className="relative z-10 font-[Inter]">Transparent pricing</span>
+                            <span className="relative z-10 font-[Inter]">CIO Leadership</span>
                             <MarkerUnderline />
                         </span>
+                        <span>for Healthcare Organizations</span>
                     </h2>
                     <p className="font-tt-hoves font-medium text-[20px] leading-[100%] max-w-3xl mx-auto tracking-[0px] text-[#00000080]">
-                        Fixed-cost assessments and flexible leadership options designed to give CEOs clarity, stability, and long-term strategic direction.
+                        Wendigo provides flexible engagement options designed to give CEOs clarity, stability, and long-term strategic direction.
                     </p>
                 </div>
 
                 {/* Pricing Cards Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch mb-16">
                     {plans.map((plan, index) => (
                         <div
                             key={index}
-                            className={`relative rounded-[32px] p-8 transition-all duration-300 ${plan.isPopular
-                                ? 'bg-[#348DF0] text-white scale-105 lg:scale-110 z-20 border-2 border-blue-400/50 shadow-2xl shadow-blue-500/20'
-                                : 'bg-white text-gray-900 border border-gray-100 hover:-translate-y-1'
-                                }`}
+                            id={plan.title.toLowerCase().split(' ')[0]}
+                            className={`relative rounded-none lg:rounded-none xl:rounded-[12px] p-8 flex flex-col justify-start transition-all duration-300 bg-[#1E293B] text-slate-300 border border-slate-700 shadow-xl`}
                         >
-                            {/* BADGE LOGIC */}
-                            {plan.showBadge && (
-                                <div className={`absolute top-6 right-6 text-xs font-semibold px-3 py-1.5 rounded-full backdrop-blur-sm border border-1 shadow-sm ${
-                                    plan.isPopular 
-                                    ? 'bg-[#FFFFFF29] text-white border-[#FFFFFF3D]' 
-                                    : 'bg-[#348DF01A] text-[#348DF0] border-[#348DF04D]'
-                                }`}>
-                                    Most Popular
-                                </div>
-                            )}
-
-                            <div className="mb-8">
-                                <div className="flex items-baseline gap-2 mb-2">
-                                    <span className="font-inter font-bold text-[28px] leading-none tracking-[-1px] align-middle">
-                                        {plan.price}
-                                    </span>
-                                    <span className={`font-ttHoves font-semibold text-[12px] leading-none tracking-[0px] align-middle ${plan.isPopular ? 'text-blue-100' : 'text-gray-500'}`}>
-                                        {plan.frequency}
-                                    </span>
-                                </div>
-                                <h3 className="font-inter font-bold text-[20px] leading-none tracking-[0px] align-middle mb-4">
+                            <div className="mb-6 flex-shrink-0">
+                                <h3 className="font-inter font-bold text-[24px] leading-tight text-white mb-2">
                                     {plan.title}
                                 </h3>
-                                <p className={`font-ttHoves font-medium text-[14px] leading-tight tracking-[0px] align-middle ${plan.isPopular ? 'text-blue-50' : 'text-gray-500'}`}>
-                                    {plan.description.split('\n').map((line, i) => (
-                                        <React.Fragment key={i}>
-                                            {line}
-                                            {i < plan.description.split('\n').length - 1 && <br />}
-                                        </React.Fragment>
-                                    ))}
-                                </p>
+                                <div className="font-inter font-bold text-[#EAB308] text-[20px] mb-1">
+                                    {plan.price}
+                                </div>
+                                <div className="font-inter font-medium text-sm text-slate-400">
+                                    {plan.frequency}
+                                </div>
                             </div>
 
-                            <ul className="space-y-3 mb-10">
+                            <ul className="space-y-3 mb-8 flex-shrink-0">
                                 {plan.features.map((feature, i) => (
                                     <li key={i} className="flex items-start gap-3">
-                                        {plan.isPopular ? (
-                                            <CheckCircle2 className="w-5 h-5 text-blue-200 opacity-100 flex-shrink-0" />
-                                        ) : (
-                                            <div className="w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
-                                                <CheckCircle2 className="w-5 h-5 text-blue-500" />
-                                            </div>
-                                        )}
-                                        <span className={`font-ttHoves font-medium text-[14px] leading-none tracking-[0px] align-middle ${plan.isPopular ? 'text-white' : 'text-gray-700'}`}>
+                                        <div className="w-1.5 h-1.5 rounded-full bg-slate-300 mt-2 flex-shrink-0"></div>
+                                        <span className="font-ttHoves font-medium text-[14px] leading-relaxed text-slate-300">
                                             {feature}
                                         </span>
                                     </li>
                                 ))}
                             </ul>
 
-                            <div className="w-full flex justify-center">
-                                <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noopener noreferrer">
-                                    <button className={`w-[260px] h-[42px] px-4 pr-3 pl-4 py-3 rounded-[30px] border border-solid font-ttHoves font-medium text-[14px] leading-none tracking-[0px] text-center align-middle flex items-center justify-center gap-[12px] opacity-100 transition-all duration-200 ${
-                                        plan.isPopular
-                                            ? 'bg-white text-black hover:bg-blue-50 shadow-lg'
-                                            : 'bg-blue-50 text-[#008AFF] hover:bg-blue-100 hover:shadow-md'
-                                    }`}>
-                                        {plan.buttonText}
-                                    </button>
-                                </a>
+                            <div className="mb-8">
+                                <p className={`font-ttHoves font-medium text-[14px] leading-relaxed text-slate-400 mb-6 flex-grow`}>
+                                    {plan.description}
+                                </p>
+                            </div>
+
+                            <div className="mt-auto">
+                                <h4 className="font-bold text-white text-[15px] mb-3">Outcomes:</h4>
+                                <ul className="space-y-3">
+                                    {plan.outcomes.map((outcome, i) => (
+                                        <li key={i} className="flex items-start gap-3">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-slate-300 mt-2 flex-shrink-0"></div>
+                                            <span className="font-ttHoves font-medium text-[14px] leading-relaxed text-slate-300">
+                                                {outcome}
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Footer Link Component */}
+                <div className="text-center pb-10">
+                    <a
+                        href="https://t.ly/7Jjhw"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[#348DF0] hover:bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-[0_10px_25px_-5px_rgba(59,130,246,0.5)] transition-all duration-200 transform hover:-translate-y-1 active:scale-95"
+                    >
+                        Meet with us to discuss your needs.
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-5 h-5 transition-transform">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>

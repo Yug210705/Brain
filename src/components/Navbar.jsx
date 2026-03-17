@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false); // New state for mobile dropdown
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -28,29 +28,24 @@ const Navbar = () => {
   return (
     <div className="relative z-50 w-full flex justify-center pt-10 px-4">
       <nav className="relative w-full max-w-7xl bg-[#001224] text-white px-6 py-3 flex items-center justify-between shadow-xl border border-slate-800/50 rounded-full">
-        {/* LOGO */}
         <Link to="/" onClick={closeMobileMenu}>
           <div className="flex items-center gap-3 pl-2">
             <img src="/logo.png" alt="Wendigo Advisors - Healthcare CIO Advisory Services by Brian Damiani" className="w-42 h-10 object-contain" />
           </div>
         </Link>
 
-        {/* DESKTOP LINKS */}
         <div className="hidden lg:flex items-center gap-8 text-[#FFFFFF6B] text-sm font-medium">
           <NavItemWithDropdown label="Services" />
-          <Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link>
           <Link to="/about" className="hover:text-white transition-colors">About Us</Link>
           <button onClick={handleTestimonialsClick} className="hover:text-white transition-colors">
             Testimonials
           </button>
-          <Link to="/resources" className="hover:text-white transition-colors">Resources</Link>
           <Link to="/insights" className="hover:text-white transition-colors">Insights</Link>
           <a href="https://yourhealthcarecio.com/blog" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Blogs</a>
         </div>
 
-        {/* CTA + MOBILE HAMBURGER */}
         <div className="flex items-center gap-4">
-          <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noreferrer">
+          <a href="https://t.ly/7Jjhw" target="_blank" rel="noreferrer">
             <button className="hidden sm:block bg-[#338CF0] text-white font-semibold py-3 px-8 rounded-full text-sm">
               Contact Us for Free
             </button>
@@ -63,7 +58,6 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* FULL PAGE MOBILE MENU */}
         <div
           className={`
             fixed inset-0 w-full h-screen bg-[#001224] transition-all duration-500 ease-in-out
@@ -78,11 +72,9 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* MOBILE MENU LINKS */}
           <div className="flex flex-col items-end gap-6 mt-12 pr-4">
             <Link to="/" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">Home</Link>
 
-            {/* MOBILE SERVICES DROPDOWN */}
             <div className="flex flex-col items-end">
               <button
                 onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
@@ -93,23 +85,20 @@ const Navbar = () => {
 
               {isMobileServicesOpen && (
                 <div className="flex flex-col items-end gap-4 mt-4 pr-2 border-r-2 border-blue-500/30 mr-1">
-                  <Link to="https://calendly.com/brian_damiani/working-session-30-min" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Free Working Session</Link>
-                  <Link to="/ITservices" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">IT Health Check Service</Link>
-                  <Link to="/cio-operating" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">CIO Operating System</Link>
-                  <Link to="/healthcare" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">CIO as a Service</Link>
+                  <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Free Working Session</a>
+                  <Link to="/services#strategic" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Strategic Advisor</Link>
+                  <Link to="/services#cio" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">CIO Advisor</Link>
+                  <Link to="/services#virtual" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Virtual CIO</Link>
                 </div>
               )}
             </div>
 
             <Link to="/about" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">About Us</Link>
             <button onClick={handleTestimonialsClick} className="text-4xl font-medium hover:text-blue-400 text-right">Testimonials</button>
-            <Link to="/pricing" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">Pricing</Link>
-            <Link to="/resources" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">Resources</Link>
             <Link to="/insights" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">Insights</Link>
             <a href="https://yourhealthcarecio.com/blog" onClick={closeMobileMenu} target="_blank" rel="noopener noreferrer" className="text-4xl font-medium hover:text-blue-400">Blogs</a>
           </div>
 
-          {/* BOTTOM SECTION */}
           <div className="mt-auto flex flex-col items-center gap-8 pb-10">
             <a href="https://www.linkedin.com/company/wendigo-advisors/" target="_blank" rel="noopener noreferrer" className="p-3 border border-slate-600 rounded-lg hover:border-blue-400 hover:text-blue-400 transition-colors bg-slate-900/50">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -126,7 +115,6 @@ const Navbar = () => {
   );
 };
 
-// Desktop Dropdown stays the same
 function NavItemWithDropdown({ label }) {
   return (
     <div className="group relative cursor-pointer flex items-center gap-1 hover:text-white transition-colors py-2">
@@ -134,10 +122,10 @@ function NavItemWithDropdown({ label }) {
       <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-200" />
       <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-[#0F172A] border border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
         <div className="py-2 flex flex-col">
-          <Link to="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noopener noreferrer" className="px-4 py-2 hover:bg-slate-800 text-sm">Free Working Session (New)</Link>
-          <Link to="/ITservices" className="px-4 py-2 hover:bg-slate-800 text-sm">IT Health Check Services</Link>
-          <Link to="/cio-operating" className="px-4 py-2 hover:bg-slate-800 text-sm">CIO Operating System</Link>
-          <Link to="/healthcare" className="px-4 py-2 hover:bg-slate-800 text-sm">CIO as a Service</Link>
+          <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer" className="px-4 py-2 hover:bg-slate-800 text-sm">Free Working Session</a>
+          <Link to="/services#strategic" className="px-4 py-2 hover:bg-slate-800 text-sm">Strategic Advisor</Link>
+          <Link to="/services#cio" className="px-4 py-2 hover:bg-slate-800 text-sm">CIO Advisor</Link>
+          <Link to="/services#virtual" className="px-4 py-2 hover:bg-slate-800 text-sm">Virtual CIO</Link>
         </div>
       </div>
     </div>

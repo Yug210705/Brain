@@ -23,7 +23,7 @@ const Pricing = () => {
 
     return (
         <section className="py-20 px-4 md:px-8 bg-slate-100 font-sans min-h-screen flex items-center justify-center">
-            
+
             <div className="max-w-6xl mx-auto w-full">
                 {/* Section Header */}
                 <div className="text-center mb-12">
@@ -37,10 +37,10 @@ const Pricing = () => {
 
                 {/* Main Container - Split Layout */}
                 <div className="bg-white rounded-[30px] shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5 min-h-[600px]">
-                    
+
                     {/* LEFT PANEL: The Offer (Dark Blue) */}
                     <div className="lg:col-span-2 bg-[#0F172A] text-white p-10 md:p-12 flex flex-col justify-between relative overflow-hidden">
-                        
+
                         {/* Abstract Background Decoration */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 opacity-10 rounded-full blur-[80px] translate-x-1/2 -translate-y-1/2"></div>
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500 opacity-10 rounded-full blur-[80px] -translate-x-1/2 translate-y-1/2"></div>
@@ -72,9 +72,9 @@ const Pricing = () => {
 
                         {/* Button Area */}
                         <div className="relative z-10 mt-8">
-                             <a 
-                                href="https://calendly.com/brian_damiani/cio-operating-system-discussion" 
-                                target="_blank" 
+                            <a
+                                href="https://t.ly/7Jjhw"
+                                target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <button className="group w-full bg-[#348DF0] hover:bg-blue-600 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 flex items-center justify-between shadow-lg shadow-blue-900/20">

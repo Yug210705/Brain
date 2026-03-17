@@ -4,19 +4,19 @@ import CTA from './CTA';
 // --- DUMMY DATA (6 Items) ---
 const testimonials = [
     {
-    id: 1,
-    quote: "Brian is an outstanding partner, a trusted advisor, and someone who will not only fix problems but also position organizations for future success.",
-    name: "Cathy Mahaffey, CEO",
-    title: "Common Ground Healthcare Cooperative",
-    avatar: "https://i.pravatar.cc/150?img=32"
-  },
-  {
-    id: 2,
-    quote: "Brian, thank you for being our technology champion. Your team saved HSCSN in our time of need.",
-    name: "Victor Fields",
-    title: "CEO Health Services for Children with Special Needs",
-    avatar: "https://i.pravatar.cc/150?img=11"
-  },
+        id: 1,
+        quote: "Brian is an outstanding partner, a trusted advisor, and someone who will not only fix problems but also position organizations for future success.",
+        name: "Cathy Mahaffey, CEO",
+        title: "Common Ground Healthcare Cooperative",
+        avatar: "https://i.pravatar.cc/150?img=32"
+    },
+    {
+        id: 2,
+        quote: "Brian, thank you for being our technology champion. Your team saved us in our time of need.",
+        name: "Victor Fields",
+        title: "CEO Health Services for Children with Special Needs",
+        avatar: "https://i.pravatar.cc/150?img=11"
+    },
 ];
 
 // --- SINGLE CARD COMPONENT ---
@@ -96,7 +96,7 @@ const CEOPerspective = () => {
 
                     {/* Button */}
                     <a
-                        href="https://calendly.com/brian_damiani/working-session-30-min"
+                        href="https://t.ly/7Jjhw"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

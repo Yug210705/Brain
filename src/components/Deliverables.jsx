@@ -115,7 +115,7 @@ const App = () => {
           </p>
 
           <a
-            href="https://calendly.com/brian_damiani/working-session-30-min"
+            href="https://t.ly/7Jjhw"
             target="_blank"
             rel="noopener noreferrer"
           >

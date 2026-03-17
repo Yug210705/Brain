@@ -7,13 +7,11 @@ import HomeContent from "../components/HomeContent";
 import Problems from "../components/Problems";
 import Services from "../components/Services";
 import Pricing from "../components/Pricing";
-import Process from "../components/Process";
 import Why from "../components/Why";
 import AboutWendigo from "../components/AboutWendigo";
 import CEOPerspective from "../components/CEOPerspective";
 import ExposureCTA from "../components/ExposureCTA";
 import Footer from "../components/Footer";
-import EntityRegistry from '../components/EntityRegistry';
 
 const Home = () => {
   const location = useLocation();
@@ -124,11 +122,9 @@ const Home = () => {
       </Helmet>
       <Hero />
       <HomeContent />
-      <EntityRegistry type="organization" />
       <Problems />
       <Services />
       <Pricing />
-      <Process />
       <Why />
       <AboutWendigo />
 

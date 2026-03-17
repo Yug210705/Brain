@@ -149,7 +149,7 @@ const CIOOperatingContent = () => {
                         Ready to transform your health plan's IT into a governed, strategic asset?
                     </p>
                     <a
-                        href="https://calendly.com/brian_damiani/working-session-30-min"
+                        href="https://t.ly/7Jjhw"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-[#348DF0] hover:bg-[#267ce0] text-white font-medium py-3.5 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-0.5"

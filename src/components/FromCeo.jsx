@@ -57,7 +57,7 @@ const testimonials = [
   },
   {
     id: 2,
-    quote: "Brian, thank you for being our technology champion. Your team saved HSCSN in our time of need.",
+    quote: "Brian, thank you for being our technology champion. Your team saved us in our time of need.",
     name: "Victor Fields",
     title: "CEO Health Services for Children with Special Needs",
     avatar: "https://i.pravatar.cc/150?img=11"
@@ -161,7 +161,7 @@ const CEOPerspective = () => {
           </h2>
 
           {/* Button */}
-          <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank"
+          <a href="https://t.ly/7Jjhw" target="_blank"
             rel="noopener noreferrer" className="w-full sm:w-auto">
             <button className="group mt-8 w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#348DF0] hover:bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-blue-500/30 transform hover:-translate-y-1">
               Book a Call

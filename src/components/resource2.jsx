@@ -93,7 +93,7 @@ const Card = ({ title, description, Icon, link }) => {
         {/* Updated Button to Link */}
         <a
           href={link}
-          
+
           className="
             mt-auto
             w-full
@@ -124,7 +124,7 @@ const Card = ({ title, description, Icon, link }) => {
 
 /* ---------------- MAIN SECTION ---------------- */
 const FeaturedRes = () => {
-  const CALENDLY_URL = "https://calendly.com/brian_damiani/working-session-30-min";
+  const CALENDLY_URL = "https://t.ly/7Jjhw";
 
   const cards = [
     {
@@ -132,7 +132,7 @@ const FeaturedRes = () => {
       description:
         "A concise overview of the 3-phase assessment that stabilizes, strengthens, and scales your IT organization.",
       icon: RefreshCw,
-      link: "/ITservices" 
+      link: "/ITservices"
     },
     {
       title: <>IT Health<br />Checklist</>,

@@ -107,38 +107,38 @@ const Card = ({ title, description, Icon, link }) => {
 };
 
 const ComplimentaryTools = () => {
-  const CALENDLY_URL = "https://calendly.com/brian_damiani/working-session-30-min";
+  const CALENDLY_URL = "https://t.ly/7Jjhw";
 
   const cards = [
-  {
-    title: <>Free Working<br />Session</>,
-    description:
-      "A 30-minute working session focused on a real technology or operational problem you’re facing—no sales pitch, just practical guidance and clarity.",
-    icon: Coffee,
-    link: "https://calendly.com/brian_damiani/working-session-30-min."
-  },
-  {
-    title: <>IT Health<br />Check</>,
-    description:
-      "A focused assessment of your current IT environment to identify risks, gaps, and opportunities with clear, prioritized recommendations.",
-    icon: HeartPulse,
-    link: "/ITservices"
-  },
-  {
-    title: <>CIO Operating<br />System</>,
-    description:
-      "A structured 3–4 month assessment that brings clarity, control, and accountability to how technology supports the business.",
-    icon: LayoutGrid,
-    link: "/cio-operating"
-  },
-  {
-    title: <>CIO as a<br />Service</>,
-    description:
-      "Ongoing fractional CIO leadership providing strategic, operational, and executive-level technology support without a full-time hire.",
-    icon: UserCircle,
-    link: "/healthcare"
-  }
-];
+    {
+      title: <>Free Working<br />Session</>,
+      description:
+        "A 30-minute working session focused on a real technology or operational problem you’re facing—no sales pitch, just practical guidance and clarity.",
+      icon: Coffee,
+      link: "https://t.ly/7Jjhw."
+    },
+    {
+      title: <>IT Health<br />Check</>,
+      description:
+        "A focused assessment of your current IT environment to identify risks, gaps, and opportunities with clear, prioritized recommendations.",
+      icon: HeartPulse,
+      link: "/ITservices"
+    },
+    {
+      title: <>CIO Operating<br />System</>,
+      description:
+        "A structured 3–4 month assessment that brings clarity, control, and accountability to how technology supports the business.",
+      icon: LayoutGrid,
+      link: "/cio-operating"
+    },
+    {
+      title: <>CIO as a<br />Service</>,
+      description:
+        "Ongoing fractional CIO leadership providing strategic, operational, and executive-level technology support without a full-time hire.",
+      icon: UserCircle,
+      link: "/healthcare"
+    }
+  ];
 
 
   return (

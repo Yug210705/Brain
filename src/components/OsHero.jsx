@@ -110,7 +110,7 @@ const OsHero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://calendly.com/brian_damiani/working-session-30-min">
+          <a href="https://t.ly/7Jjhw">
             <button className="bg-[#348DF0] hover:bg-[#267ce0] text-white font-bold py-4 px-10 rounded-full shadow-[0_10px_30px_-10px_rgba(52,141,240,0.5)] transition-all transform hover:-translate-y-1 hover:shadow-xl text-lg flex items-center gap-2">
               Book a Strategy Call <ArrowRight size={20} />
             </button>

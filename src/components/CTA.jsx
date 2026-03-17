@@ -45,7 +45,7 @@ const CTA = () => {
                     </p>
 
                     {/* CTA Button */}
-                    <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank"
+                    <a href="https://t.ly/7Jjhw" target="_blank"
                         rel="noopener noreferrer">
                         <button
                             className="bg-white hover:bg-blue-50 text-[#348DF0] font-bold w-[180px] h-[42px] px-[32px] py-[12px] rounded-[30px] shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 hover:scale-105 active:scale-95 text-[16px] tracking-wide flex items-center justify-center gap-[12px]"

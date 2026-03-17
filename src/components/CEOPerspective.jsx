@@ -11,7 +11,7 @@ const testimonials = [
     },
     {
         id: 2,
-        quote: "Brian, thank you for being our technology champion. Your team saved HSCSN in our time of need.",
+        quote: "Brian, thank you for being our technology champion. Your team saved us in our time of need.",
         name: "Victor Fields",
         title: "CEO Health Services for Children with Special Needs",
         avatar: "https://i.pravatar.cc/150?img=11"
@@ -119,7 +119,7 @@ const CEOPerspective = () => {
                                     "ratingValue": "5",
                                     "bestRating": "5"
                                 },
-                                "reviewBody": "Brian, thank you for being our technology champion. Your team saved HSCSN in our time of need.",
+                                "reviewBody": "Brian, thank you for being our technology champion. Your team saved us in our time of need.",
                                 "itemReviewed": {
                                     "@type": "ProfessionalService",
                                     "name": "Wendigo Advisors Healthcare CIO Advisory"
@@ -167,10 +167,10 @@ const CEOPerspective = () => {
                     </span>
 
                     {/* Headline */}
-                    <h2 className="text-[52px] leading-none font-bold tracking-[-2px] text-[#00000052] mb-10 font-inter">
-                        A{" "}
+                    <h2 className="text-[52px] leading-none font-bold tracking-[-2px] text-[#00000052] mb-6 font-inter">
+                        What{" "}
                         <span className="relative inline-block text-slate-900 z-10">
-                            CEO's perspective.
+                            Healthcare CEOs Say
                             <img
                                 src="/line.png"
                                 alt="underline"
@@ -179,10 +179,14 @@ const CEOPerspective = () => {
                         </span>
                     </h2>
 
+                    <p className="text-[18px] leading-[140%] text-[#00000080] font-tt mb-10 max-w-md">
+                        Healthcare leaders turn to Wendigo when experienced CIO leadership is needed to stabilize operations, reduce risk, and guide complex technology decisions.
+                    </p>
+
 
                     {/* Button */}
                     <a
-                        href="https://calendly.com/brian_damiani/working-session-30-min"
+                        href="https://t.ly/7Jjhw"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

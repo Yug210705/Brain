@@ -160,7 +160,6 @@ function HeroContent() {
 
       {/* MAIN TEXT CONTENT */}
       <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center">
-        {/* Badge */}
         <div className="mb-8 inline-block animate-fade-in-up">
           <div className="px-5 py-2 rounded-full border border-[#B48F41]/30 bg-[#0A1A2F]/80 backdrop-blur-sm shadow-lg">
             <span className="text-[#E6B753] text-sm font-medium tracking-wide">
@@ -169,20 +168,17 @@ function HeroContent() {
           </div>
         </div>
 
-        {/* Heading */}
-        {/* Heading */}
         <h1
           className="max-w-5xl mx-auto mb-10 text-4xl font-bold tracking-tight leading-[1.2] md:text-6xl lg:text-[4rem] text-white animate-fade-in-up"
           style={{ transitionDelay: "200ms" }}
         >
-          {/* Main Keyword Block */}
           <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 group">
-            <span className="relative z-10 font-[Inter]">Healthcare CIO</span>
+            <span className="relative z-10 font-[Inter]">Flexible CIO</span>
             <MarkerUnderline />
           </span>
 
           <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 group">
-            <span className="relative z-10 font-[Inter]">Advisory</span>
+            <span className="relative z-10 font-[Inter]">Leadership</span>
             <MarkerUnderline />
           </span>
 
@@ -190,25 +186,22 @@ function HeroContent() {
 
           <span className="text-gray-400 font-semibold mx-2 font-[Inter] text-3xl md:text-5xl">for</span>
 
-          {/* Target Audience Block */}
           <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 group">
-            <span className="relative z-10 font-[Inter]">Health Plans</span>
+            <span className="relative z-10 font-[Inter]">Healthcare Organizations</span>
             <MarkerUnderline />
           </span>
         </h1>
 
-        {/* Subtext */}
-        <p className="font-tt-hoves font-medium text-[16px] leading-[160%] tracking-[0px] text-[#FFFFFF80] text-center max-w-4xl mx-auto mb-6">
-          Wendigo Advisors is a specialized <strong className="text-white">healthcare CIO advisory firm</strong> providing <strong className="text-white">CIO as a service for health plans</strong>, <strong className="text-white">IT health checks</strong>, and strategic CIO operating model implementation for payer organizations across the United States.
+        <p className="font-tt-hoves font-medium text-[16px] leading-[160%] tracking-[0px] text-gray-200 text-center max-w-4xl mx-auto mb-6">
+          Independent CIO leadership to assist healthcare organizations in navigating critical technology decisions and ensure strong business–IT alignment.
         </p>
-        <p className="font-tt-hoves font-medium text-[14px] leading-[160%] tracking-[0px] text-[#FFFFFF60] text-center max-w-3xl mx-auto mb-10">
-          Led by <strong className="text-[#FFFFFFAA]">Brian Damiani</strong> — 25+ years of healthcare IT leadership experience helping health plans navigate digital transformation, stabilize IT operations, and align technology with business strategy.
+        <p className="font-tt-hoves font-medium text-[16px] leading-[160%] tracking-[0px] text-gray-300 text-center max-w-3xl mx-auto mb-10">
+          With 25 years of healthcare expertise, Wendigo provides strategic CIO leadership that reduces risk, stabilizing operations, and aligning technology with business priorities.
         </p>
 
-        {/* CTA Buttons */}
         <div className="flex flex-col items-center gap-5">
           <a
-            href="https://calendly.com/brian_damiani/working-session-30-min"
+            href="https://t.ly/7Jjhw"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -216,16 +209,6 @@ function HeroContent() {
               Book a Call
             </button>
           </a>
-
-          {/* <a
-            href="https://it-maturity-assessment.replit.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-slate-300 hover:text-white underline underline-offset-4 decoration-slate-500 hover:decoration-white transition-all text-sm font-normal"
-          >
-            Get Your IT Maturity Self-Assessment
-          </a> */}
-
         </div>
       </div>
       <br />

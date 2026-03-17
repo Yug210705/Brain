@@ -114,9 +114,8 @@ const CardBackground = () => (
 const Card = ({ title, icon: Icon, description, isActive = false, link = "#" }) => {
   return (
     <div
-      className={`relative w-full max-w-[400px] min-h-[325px] flex flex-col transition-all duration-300 ${
-        isActive ? "scale-105 z-10" : "hover:scale-[1.02]"
-      }`}
+      className={`relative w-full max-w-[400px] min-h-[325px] flex flex-col transition-all duration-300 ${isActive ? "scale-105 z-10" : "hover:scale-[1.02]"
+        }`}
     >
       <CardBackground />
 
@@ -141,7 +140,7 @@ const Card = ({ title, icon: Icon, description, isActive = false, link = "#" }) 
         {/* CTA Button Link */}
         <a
           href={link}
-          
+
           className="
             mt-auto
             w-full
@@ -169,7 +168,7 @@ const Card = ({ title, icon: Icon, description, isActive = false, link = "#" }) 
 };
 
 export default function App() {
-  const CALENDLY_LINK = "https://calendly.com/brian_damiani/working-session-30-min";
+  const CALENDLY_LINK = "https://t.ly/7Jjhw";
 
   const cards = [
     {
@@ -190,7 +189,7 @@ export default function App() {
     <div className="relative w-full font-sans selection:bg-blue-100 text-slate-900 overflow-hidden flex flex-col items-center justify-center py-10">
       <GridBackground />
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-3xl">
@@ -219,7 +218,7 @@ export default function App() {
             <Card
               key={index}
               {...card}
-              isActive={index === 0} 
+              isActive={index === 0}
             />
           ))}
         </div>

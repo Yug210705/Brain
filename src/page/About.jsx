@@ -11,7 +11,6 @@ import Footer from '../components/Footer'
 import How from '../components/How'
 import CTA from '../components/CTA'
 import HealthcareMarquee from '../components/HealthcareMarquee'
-import EntityRegistry from '../components/EntityRegistry'
 
 const About = () => {
   return (
@@ -102,7 +101,6 @@ const About = () => {
       <About1 />
       <About2 />
       <About3 />
-      <EntityRegistry type="person" />
       <BrianAuthority />
       {/* <AboutWendigo /> */}
       <How />
