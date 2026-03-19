@@ -169,24 +169,24 @@ function HeroContent() {
         </div>
 
         <h1
-          className="max-w-5xl mx-auto mb-10 text-4xl font-bold tracking-tight leading-[1.2] md:text-6xl lg:text-[4rem] text-white animate-fade-in-up"
+          className="max-w-5xl mx-auto mb-10 text-3xl font-bold tracking-tight leading-[1.2] md:text-6xl lg:text-[4rem] text-white animate-fade-in-up"
           style={{ transitionDelay: "200ms" }}
         >
-          <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 group">
+          <span className="relative inline-block sm:whitespace-nowrap mr-2 md:mr-4 group">
             <span className="relative z-10 font-[Inter]">Flexible CIO</span>
             <MarkerUnderline />
           </span>
 
-          <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 group">
+          <span className="relative inline-block sm:whitespace-nowrap mr-2 md:mr-4 group">
             <span className="relative z-10 font-[Inter]">Leadership</span>
             <MarkerUnderline />
           </span>
 
           <br className="hidden md:block" />
 
-          <span className="text-gray-400 font-semibold mx-2 font-[Inter] text-3xl md:text-5xl">for</span>
+          <span className="text-gray-400 font-semibold mx-2 font-[Inter] text-2xl md:text-5xl">for</span>
 
-          <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 group">
+          <span className="relative inline-block sm:whitespace-nowrap mr-2 md:mr-4 group">
             <span className="relative z-10 font-[Inter]">Healthcare Organizations</span>
             <MarkerUnderline />
           </span>

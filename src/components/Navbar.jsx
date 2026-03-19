@@ -30,11 +30,11 @@ const Navbar = () => {
       <nav className="relative w-full max-w-7xl bg-[#001224] text-white px-6 py-3 flex items-center justify-between shadow-xl border border-slate-800/50 rounded-full">
         <Link to="/" onClick={closeMobileMenu}>
           <div className="flex items-center gap-3 pl-2">
-            <img src="/logo.png" alt="Wendigo Advisors - Healthcare CIO Advisory Services by Brian Damiani" className="w-42 h-10 object-contain" />
+            <img src="/logo.png" alt="Wendigo Advisors - Healthcare CIO Advisory Services by Brian Damiani" className="w-32 sm:w-42 h-8 sm:h-10 object-contain" />
           </div>
         </Link>
 
-        <div className="hidden lg:flex items-center gap-8 text-[#FFFFFF6B] text-sm font-medium">
+        <div className="hidden lg:flex items-center gap-10 text-slate-200 text-sm font-semibold tracking-wide">
           <NavItemWithDropdown label="Services" />
           <Link to="/about" className="hover:text-white transition-colors">About Us</Link>
           <button onClick={handleTestimonialsClick} className="hover:text-white transition-colors">
@@ -66,7 +66,7 @@ const Navbar = () => {
           `}
         >
           <div className="flex items-center justify-between w-full px-2">
-            <img src="/logo.png" alt="Logo" className="w-42 h-10 object-contain" />
+            <img src="/logo.png" alt="Logo" className="w-32 h-8 object-contain" />
             <button onClick={closeMobileMenu} className="p-2 text-gray-300 hover:text-white">
               <X size={32} />
             </button>
@@ -85,10 +85,10 @@ const Navbar = () => {
 
               {isMobileServicesOpen && (
                 <div className="flex flex-col items-end gap-4 mt-4 pr-2 border-r-2 border-blue-500/30 mr-1">
-                  <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Free Working Session</a>
-                  <Link to="/services#strategic" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Strategic Advisor</Link>
-                  <Link to="/services#cio" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">CIO Advisor</Link>
-                  <Link to="/services#virtual" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Virtual CIO</Link>
+                  <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="text-2xl text-slate-300 hover:text-white">Free Working Session</a>
+                  <Link to="/services#strategic" onClick={closeMobileMenu} className="text-2xl text-slate-300 hover:text-white">Strategic Advisor</Link>
+                  <Link to="/services#cio" onClick={closeMobileMenu} className="text-2xl text-slate-300 hover:text-white">CIO Advisor</Link>
+                  <Link to="/services#virtual" onClick={closeMobileMenu} className="text-2xl text-slate-300 hover:text-white">Virtual CIO</Link>
                 </div>
               )}
             </div>
@@ -120,12 +120,12 @@ function NavItemWithDropdown({ label }) {
     <div className="group relative cursor-pointer flex items-center gap-1 hover:text-white transition-colors py-2">
       <span>{label}</span>
       <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-200" />
-      <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-[#0F172A] border border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-        <div className="py-2 flex flex-col">
-          <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer" className="px-4 py-2 hover:bg-slate-800 text-sm">Free Working Session</a>
-          <Link to="/services#strategic" className="px-4 py-2 hover:bg-slate-800 text-sm">Strategic Advisor</Link>
-          <Link to="/services#cio" className="px-4 py-2 hover:bg-slate-800 text-sm">CIO Advisor</Link>
-          <Link to="/services#virtual" className="px-4 py-2 hover:bg-slate-800 text-sm">Virtual CIO</Link>
+      <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-60 bg-[#001224]/95 border border-slate-700/50 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 backdrop-blur-xl overflow-hidden">
+        <div className="py-3 flex flex-col">
+          <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Free Working Session</a>
+          <Link to="/services#strategic" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Strategic Advisor</Link>
+          <Link to="/services#cio" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">CIO Advisor</Link>
+          <Link to="/services#virtual" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Virtual CIO</Link>
         </div>
       </div>
     </div>

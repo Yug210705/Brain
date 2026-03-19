@@ -127,7 +127,7 @@ const Pricing = () => {
                     <span className="inline-block px-[16px] py-[4px] rounded-[30px] bg-[#348DF01F] border border-[#348DF080] text-sm font-medium text-blue-500 mb-6 text-center">
                         Pricing
                     </span>
-                    <h2 className="max-w-5xl mx-auto mb-10 text-4xl font-bold leading-[1.2] md:text-5xl text-black">
+                    <h2 className="max-w-5xl mx-auto mb-10 text-2xl sm:text-4xl font-bold leading-[1.2] md:text-5xl text-black">
                         <span className="text-gray-600 font-semibold font-[Inter]">Flexible</span>{" "}
                         <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
                             <span className="relative z-10 font-[Inter]">CIO Leadership</span>
