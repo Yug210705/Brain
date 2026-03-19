@@ -184,7 +184,7 @@ function HeroContent() {
 
           <br className="hidden md:block" />
 
-          <span className="text-gray-400 font-semibold mx-2 font-[Inter] text-2xl md:text-5xl">for</span>
+          <span className="text-gray-400 font-semibold mx-4 md:mx-6 font-[Inter] text-2xl md:text-5xl inline-block my-2 md:my-0">for</span>
 
           <span className="relative inline-block sm:whitespace-nowrap mr-2 md:mr-4 group">
             <span className="relative z-10 font-[Inter]">Healthcare Organizations</span>

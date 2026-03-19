@@ -139,12 +139,12 @@ const BlogIndex = () => {
                                 to={`/insights/${article.slug}`}
                                 className="group bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
                             >
-                                <div className="bg-gradient-to-br from-[#001224] to-[#0A2A4E] p-8 min-h-[140px] flex items-end">
-                                    <h2 className="text-xl font-bold text-white leading-snug group-hover:text-[#348DF0] transition-colors">
+                                <div className="bg-gradient-to-br from-[#001224] to-[#0A2A4E] p-6 md:p-8 min-h-[140px] flex items-end">
+                                    <h2 className="text-lg md:text-xl font-bold text-white leading-snug group-hover:text-[#348DF0] transition-colors">
                                         {article.title}
                                     </h2>
                                 </div>
-                                <div className="p-6 flex flex-col flex-grow">
+                                <div className="p-5 md:p-6 flex flex-col flex-grow">
                                     <p className="text-slate-600 leading-relaxed mb-6 flex-grow">{article.excerpt}</p>
                                     <div className="flex items-center justify-between text-sm text-slate-400">
                                         <div className="flex items-center gap-2">

@@ -11,8 +11,8 @@ const MarkerUnderline = ({ className = "" }) => (
   >
     <defs>
       <filter id="markerNoise">
-        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="12" xChannelSelector="R" yChannelSelector="G" />
+        <feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="3" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
       </filter>
     </defs>
     <rect x="0" y="2" width="200" height="6" fill="#348DF0" filter="url(#markerNoise)" opacity="0.7" />
@@ -39,7 +39,7 @@ const SpecialtyCard = ({ text, index, isVisible, isWide }) => {
       </div>
 
       {/* Floating Checkmark - Adjusted size for mobile */}
-      <div className="absolute -top-3 -right-3 md:-top-5 md:-right-5 w-10 h-10 md:w-14 md:h-14 bg-[#3B82F6] rounded-full flex items-center justify-center shadow-md z-10">
+      <div className="absolute -top-3 -right-1 md:-top-5 md:-right-5 w-10 h-10 md:w-14 md:h-14 bg-[#3B82F6] rounded-full flex items-center justify-center shadow-md z-10">
         <Check size={20} className="text-white md:hidden" strokeWidth={4} />
         <Check size={30} className="text-white hidden md:block" strokeWidth={3} />
       </div>
@@ -132,7 +132,7 @@ const App = () => {
           </div>
 
           {/* Card Grid */}
-          <div className="flex flex-col md:flex-row flex-wrap justify-center gap-8 md:gap-6 lg:gap-8 max-w-6xl mx-auto px-2 md:px-0">
+          <div className="flex flex-col md:flex-row flex-wrap justify-center gap-10 md:gap-6 lg:gap-8 max-w-6xl mx-auto px-6 md:px-0">
             {specialtyItems.map((text, index) => (
               <SpecialtyCard
                 key={index}

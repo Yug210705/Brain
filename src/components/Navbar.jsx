@@ -72,31 +72,31 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="flex flex-col items-end gap-6 mt-12 pr-4">
-            <Link to="/" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">Home</Link>
+          <div className="flex flex-col items-center gap-6 mt-12">
+            <Link to="/" onClick={closeMobileMenu} className="text-3xl font-medium hover:text-blue-400">Home</Link>
 
-            <div className="flex flex-col items-end">
+            <div className="flex flex-col items-center">
               <button
                 onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                className="flex items-center gap-2 text-4xl font-medium hover:text-blue-400"
+                className="flex items-center gap-2 text-3xl font-medium hover:text-blue-400"
               >
-                Services <ChevronDown size={28} className={`${isMobileServicesOpen ? "rotate-180" : ""} transition-transform`} />
+                Services <ChevronDown size={24} className={`${isMobileServicesOpen ? "rotate-180" : ""} transition-transform`} />
               </button>
 
               {isMobileServicesOpen && (
-                <div className="flex flex-col items-end gap-4 mt-4 pr-2 border-r-2 border-blue-500/30 mr-1">
-                  <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="text-2xl text-slate-300 hover:text-white">Free Working Session</a>
-                  <Link to="/services#strategic" onClick={closeMobileMenu} className="text-2xl text-slate-300 hover:text-white">Strategic Advisor</Link>
-                  <Link to="/services#cio" onClick={closeMobileMenu} className="text-2xl text-slate-300 hover:text-white">CIO Advisor</Link>
-                  <Link to="/services#virtual" onClick={closeMobileMenu} className="text-2xl text-slate-300 hover:text-white">Virtual CIO</Link>
+                <div className="flex flex-col items-center gap-4 mt-4 py-4 px-6 bg-slate-800/30 rounded-2xl w-full">
+                  <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Free Working Session</a>
+                  <Link to="/services#strategic" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Strategic Advisor</Link>
+                  <Link to="/services#cio" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">CIO Advisor</Link>
+                  <Link to="/services#virtual" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Virtual CIO</Link>
                 </div>
               )}
             </div>
 
-            <Link to="/about" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">About Us</Link>
-            <button onClick={handleTestimonialsClick} className="text-4xl font-medium hover:text-blue-400 text-right">Testimonials</button>
-            <Link to="/insights" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">Insights</Link>
-            <a href="https://yourhealthcarecio.com/blog" onClick={closeMobileMenu} target="_blank" rel="noopener noreferrer" className="text-4xl font-medium hover:text-blue-400">Blogs</a>
+            <Link to="/about" onClick={closeMobileMenu} className="text-3xl font-medium hover:text-blue-400">About Us</Link>
+            <button onClick={handleTestimonialsClick} className="text-3xl font-medium hover:text-blue-400 text-center">Testimonials</button>
+            <Link to="/insights" onClick={closeMobileMenu} className="text-3xl font-medium hover:text-blue-400">Insights</Link>
+            <a href="https://yourhealthcarecio.com/blog" onClick={closeMobileMenu} target="_blank" rel="noopener noreferrer" className="text-3xl font-medium hover:text-blue-400">Blogs</a>
           </div>
 
           <div className="mt-auto flex flex-col items-center gap-8 pb-10">

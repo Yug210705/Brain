@@ -24,7 +24,7 @@ const MarkerUnderline = ({ className = "" }) => {
         <filter id={`markerNoise-${id}`}>
           <feTurbulence
             type="fractalNoise"
-            baseFrequency="0.8"
+            baseFrequency="0.4"
             numOctaves="3"
             stitchTiles="stitch"
             result="noise"
@@ -32,7 +32,7 @@ const MarkerUnderline = ({ className = "" }) => {
           <feDisplacementMap
             in="SourceGraphic"
             in2="noise"
-            scale="10"
+            scale="6"
             xChannelSelector="R"
             yChannelSelector="G"
           />
@@ -125,7 +125,7 @@ const Problems = () => {
                 {problem.icon}
               </div>
 
-              <h3 className="font-inter font-bold text-[24px] text-black mb-3">
+              <h3 className="font-inter font-bold text-xl md:text-[24px] text-black mb-3">
                 {problem.title}
               </h3>
 
