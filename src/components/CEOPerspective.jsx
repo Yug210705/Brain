@@ -161,7 +161,7 @@ const CEOPerspective = () => {
                     {/* Badge */}
 
                     <span
-                        className="inline-block w-[142px] h-[30px] px-[16px] py-[4px] rounded-[30px] bg-[#348DF01F] border border-[#348DF080] text-sm font-medium text-blue-500 mb-6 text-center"
+                        className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#348DF01F] border border-[#348DF080] text-sm font-semibold text-blue-500 mb-6"
                     >
                         From a CEO
                     </span>
@@ -186,7 +186,7 @@ const CEOPerspective = () => {
 
                     {/* Button */}
                     <a
-                        href="https://calendly.com/brian_damiani/working-session-30-min"
+                        href="https://t.ly/7Jjhw"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

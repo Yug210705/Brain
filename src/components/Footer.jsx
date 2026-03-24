@@ -41,7 +41,7 @@ const Footer = () => {
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "contactType": "Business Inquiries",
-                  "url": "https://calendly.com/brian_damiani/working-session-30-min",
+                  "url": "https://t.ly/7Jjhw",
                   "availableLanguage": "English"
                 },
                 "areaServed": {
@@ -141,7 +141,7 @@ const Footer = () => {
               Services
             </h3>
             <ul className="space-y-4">
-              <li><a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">Free Working Session</a></li>
+              <li><a href="/#pricing" className="hover:text-blue-400">CIO Engagement Models</a></li>
               <li><a href="/ITservices" className="hover:text-blue-400">IT Health Check Services</a></li>
               <li><a href="/cio-operating" className="hover:text-blue-400">CIO Operating System</a></li>
               <li><a href="/healthcare" className="hover:text-blue-400">CIO as a Service for Health Plans</a></li>

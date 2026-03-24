@@ -26,8 +26,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative z-50 w-full flex justify-center pt-10 px-4">
-      <nav className="relative w-full max-w-7xl bg-[#001224] text-white px-6 py-3 flex items-center justify-between shadow-xl border border-slate-800/50 rounded-full">
+    <div className="sticky top-0 z-50 w-full flex justify-center pt-6 px-4 pointer-events-none">
+      <nav className="relative w-full max-w-7xl bg-[#001224] text-white px-6 py-3 flex items-center justify-between shadow-xl border border-slate-800/50 rounded-full pointer-events-auto">
         <Link to="/" onClick={closeMobileMenu}>
           <div className="flex items-center gap-3 pl-2">
             <img src="/logo.png" alt="Wendigo Advisors - Healthcare CIO Advisory Services by Brian Damiani" className="w-32 sm:w-42 h-8 sm:h-10 object-contain" />
@@ -85,9 +85,9 @@ const Navbar = () => {
 
               {isMobileServicesOpen && (
                 <div className="flex flex-col items-center gap-4 mt-4 py-4 px-6 bg-slate-800/30 rounded-2xl w-full">
-                  <Link to="/#pricing" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Strategic CIO Advisor</Link>
-                  <Link to="/#pricing" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Fractional CIO Leadership</Link>
-                  <Link to="/#pricing" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Interim CIO Leadership</Link>
+                  <Link to="/#strategic" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Strategic CIO Advisor</Link>
+                  <Link to="/#fractional" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Fractional CIO Leadership</Link>
+                  <Link to="/#interim" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Interim CIO Leadership</Link>
                 </div>
               )}
             </div>
@@ -121,9 +121,9 @@ function NavItemWithDropdown({ label }) {
       <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-200" />
       <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-60 bg-[#001224]/95 border border-slate-700/50 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 backdrop-blur-xl overflow-hidden">
         <div className="py-3 flex flex-col">
-          <Link to="/#pricing" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Strategic CIO Advisor</Link>
-          <Link to="/#pricing" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Fractional CIO Leadership</Link>
-          <Link to="/#pricing" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Interim CIO Leadership</Link>
+          <Link to="/#strategic" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Strategic CIO Advisor</Link>
+          <Link to="/#fractional" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Fractional CIO Leadership</Link>
+          <Link to="/#interim" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Interim CIO Leadership</Link>
         </div>
       </div>
     </div>

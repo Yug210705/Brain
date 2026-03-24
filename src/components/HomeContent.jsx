@@ -7,14 +7,14 @@ const HomeContent = () => {
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none opacity-30" style={{ backgroundImage: 'linear-gradient(to right, rgba(52, 141, 240, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(52, 141, 240, 0.05) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-12 lg:px-8">
 
         <div className="text-center mb-16">
           <span className="inline-flex px-4 py-1.5 text-xs md:text-sm font-medium text-blue-500 bg-[#348DF01F] border border-[#348DF080] rounded-full mb-6">
             When Health Plans Choose Wendigo Advisors
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
-            CIO Advisory Services<br className="hidden md:block" />
+            CIO Advisory Services <br className="hidden md:block" />
             <span className="text-[#348DF0]">for Healthcare Organizations</span>
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-slate-600 leading-relaxed mb-10">

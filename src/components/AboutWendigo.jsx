@@ -87,7 +87,7 @@ const AboutWendigo = () => {
 
           {/* Badge */}
           <span
-            className="inline-block w-[193px] h-[30px] px-[16px] py-[4px] rounded-[30px] bg-[#348DF01F] border border-[#348DF080] text-sm font-medium text-blue-500 mb-6 text-center"
+            className="inline-flex items-center justify-center px-[16px] py-[6px] rounded-[30px] bg-[#348DF01F] border border-[#348DF080] text-sm font-semibold text-blue-500 mb-6 text-center"
           >
             Who is Wendigo Advisors?
           </span>

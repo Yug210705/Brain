@@ -184,7 +184,7 @@ function HeroContent() {
 
           <br className="hidden md:block" />
 
-          <span className="text-slate-400 font-semibold mx-4 md:mx-6 font-[Inter] text-2xl md:text-5xl inline-block my-2 md:my-0">for</span>
+          <span className="text-slate-400 font-bold mx-4 md:mx-6 font-sans text-xl md:text-5xl inline-block my-2 md:my-0">&nbsp;for&nbsp;</span>
 
           <span className="relative inline-block sm:whitespace-nowrap mr-2 md:mr-4 group">
             <span className="relative z-10 font-[Inter]">Healthcare Organizations</span>
@@ -200,15 +200,15 @@ function HeroContent() {
         </p>
 
         <div className="flex flex-col items-center gap-5">
-          <a
-            href="https://calendly.com/brian_damiani/working-session-30-min"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="bg-[#348DF0] hover:bg-[#267ce0] text-white font-medium py-3.5 px-12 rounded-full shadow-[0_10px_30px_-10px_rgba(45,140,255,0.4)] transition-transform transform hover:-translate-y-0.5 active:translate-y-0 text-base">
-              Book a Call
-            </button>
-          </a>
+            <a
+              href="https://t.ly/7Jjhw"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#348DF0] hover:bg-[#267ce0] text-white font-medium py-3.5 px-12 rounded-full shadow-[0_10px_30px_-10px_rgba(45,140,255,0.4)] transition-transform transform hover:-translate-y-0.5 active:translate-y-0 text-base">
+                Book a Call
+              </button>
+            </a>
         </div>
       </div>
       <br />

@@ -9,7 +9,7 @@ const EntityRegistry = ({ type = 'organization' }) => {
                 <div className="max-w-6xl mx-auto px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <span className="inline-flex px-3 py-1 text-xs font-bold tracking-wider uppercase text-[#348DF0] bg-[#348DF01F] rounded-md mb-4">
+                            <span className="inline-flex items-center justify-center px-3 py-1.5 text-xs font-bold tracking-wider uppercase text-[#348DF0] bg-[#348DF01F] rounded-md mb-4 leading-none">
                                 Entity Definition: Wendigo Advisors
                             </span>
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">About Wendigo Advisors</h2>
@@ -107,7 +107,7 @@ const EntityRegistry = ({ type = 'organization' }) => {
                 <div className="bg-slate-900 rounded-3xl p-8 md:p-12 text-white">
                     <div className="grid lg:grid-cols-3 gap-12 items-start">
                         <div className="lg:col-span-2">
-                            <span className="inline-flex px-3 py-1 text-xs font-bold tracking-wider uppercase text-[#348DF0] bg-[#348DF01F] rounded-md mb-4">
+                            <span className="inline-flex items-center justify-center px-3 py-1.5 text-xs font-bold tracking-wider uppercase text-[#348DF0] bg-[#348DF01F] rounded-md mb-4 leading-none">
                                 Authority Entity: Brian Damiani
                             </span>
                             <h2 className="text-3xl font-bold mb-6">Healthcare CIO & Payer IT Strategist</h2>

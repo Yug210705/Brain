@@ -26,44 +26,30 @@ const ExposureCTA = () => {
                 {/* Inner content container */}
                 <div className="relative z-20 py-10 px-6 md:py-10 md:px-12 flex flex-col items-center">
 
-                    {/* Badge */}
-                    <div className="inline-block px-5 py-2 mb-5 rounded-full border border-white/40 bg-white/10 backdrop-blur-md shadow-sm">
+                    <div className="inline-flex items-center justify-center px-5 py-2 mb-5 rounded-full border border-white/40 bg-white/10 backdrop-blur-md shadow-sm">
                         <span className="text-[14px] leading-none font-medium text-white text-center font-tt">
                             From a CEO
                         </span>
-
                     </div>
 
                     {/* Headline */}
-                    <h2 className="text-[48px] leading-[48px] font-bold tracking-[-2px] text-white text-center mb-4 max-w-6xl font-inter">
+                    <h2 className="text-3xl md:text-5xl lg:text-[48px] leading-tight font-bold tracking-tight text-white text-center mb-4 max-w-6xl font-inter">
                         If you feel exposed, <span className="inline-block">you probably are.</span>
                     </h2>
 
-
                     {/* Subtitle */}
-                    <p className="text-[20px] leading-none font-normal text-blue-50 text-center mb-12 max-w-2xl opacity-95 font-tt">
+                    <p className="text-lg md:text-xl font-normal text-blue-50 text-center mb-12 max-w-2xl opacity-95 font-tt">
                         Get clarity. Regain control. Protect your organization.
                     </p>
 
-
                     {/* CTA Button */}
                     <a
-                        href="https://calendly.com/brian_damiani/working-session-30-min"
+                        href="https://t.ly/7Jjhw"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <button
-                            className="
-    bg-white hover:bg-blue-50 text-[#348DF0]
-    font-bold
-    w-[240px] h-[42px]
-    px-[32px] py-[12px]
-    rounded-[30px]
-    shadow-xl hover:shadow-2xl
-    transition-all transform hover:-translate-y-1 hover:scale-105 active:scale-95
-    text-[16px] tracking-wide
-    flex items-center justify-center gap-[12px]
-  "
+                            className="bg-white hover:bg-blue-50 text-[#348DF0] font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 hover:scale-105 active:scale-95 text-base tracking-wide flex items-center justify-center gap-[12px]"
                         >
                             Book a conversation
                         </button>
