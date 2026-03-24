@@ -184,7 +184,7 @@ function HeroContent() {
 
           <br className="hidden md:block" />
 
-          <span className="text-gray-400 font-semibold mx-4 md:mx-6 font-[Inter] text-2xl md:text-5xl inline-block my-2 md:my-0">for</span>
+          <span className="text-slate-400 font-semibold mx-4 md:mx-6 font-[Inter] text-2xl md:text-5xl inline-block my-2 md:my-0">for</span>
 
           <span className="relative inline-block sm:whitespace-nowrap mr-2 md:mr-4 group">
             <span className="relative z-10 font-[Inter]">Healthcare Organizations</span>
@@ -192,10 +192,10 @@ function HeroContent() {
           </span>
         </h1>
 
-        <p className="font-tt-hoves font-medium text-[16px] leading-[160%] tracking-[0px] text-gray-200 text-center max-w-4xl mx-auto mb-6">
+        <p className="font-tt-hoves font-medium text-[16px] leading-[160%] tracking-[0px] text-slate-100 text-center max-w-4xl mx-auto mb-6">
           Independent CIO leadership to assist healthcare organizations in navigating critical technology decisions and ensure strong business–IT alignment.
         </p>
-        <p className="font-tt-hoves font-medium text-[16px] leading-[160%] tracking-[0px] text-gray-300 text-center max-w-3xl mx-auto mb-10">
+        <p className="font-tt-hoves font-medium text-[16px] leading-[160%] tracking-[0px] text-slate-300 text-center max-w-3xl mx-auto mb-10">
           With 25 years of healthcare expertise, Wendigo provides strategic CIO leadership that reduces risk, stabilizing operations, and aligning technology with business priorities.
         </p>
 

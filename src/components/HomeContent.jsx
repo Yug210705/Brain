@@ -17,9 +17,60 @@ const HomeContent = () => {
             CIO Advisory Services<br className="hidden md:block" />
             <span className="text-[#348DF0]">for Healthcare Organizations</span>
           </h2>
-          <p className="max-w-3xl mx-auto text-lg text-slate-600 leading-relaxed">
+          <p className="max-w-3xl mx-auto text-lg text-slate-600 leading-relaxed mb-10">
             Wendigo Advisors is a specialized <strong>healthcare CIO advisory firm</strong> that delivers executive-level IT leadership exclusively to health plans, managed care organizations, and payer systems across the United States. Our founder, <Link to="/about" className="text-[#348DF0] hover:underline font-semibold">Brian Damiani</Link>, brings 25+ years of hands-on healthcare IT strategy experience to every engagement.
           </p>
+
+          <div className="max-w-4xl mx-auto text-left bg-[#F8FAFC] p-8 rounded-3xl border border-slate-100 mb-16">
+            <h3 className="text-xl font-bold text-slate-900 mb-6">
+              Technology leadership challenges begin affecting organizational performance, risk, or strategic progress such as:
+            </h3>
+            <ul className="space-y-6">
+              {[
+                {
+                  title: "A CIO's departure creates leadership uncertainty",
+                  desc: "Organizations need experienced guidance to stabilize operations and maintain momentum across critical technology initiatives"
+                },
+                {
+                  title: "Technology decisions carry significant operational or financial risk",
+                  desc: "Executive teams benefit from an independent, CIO-level perspective to guide high-stakes investments and strategic decisions"
+                },
+                {
+                  title: "IT strategy has drifted from business priorities",
+                  desc: "Leadership teams need a clear technology roadmap that aligns with organizational goals."
+                },
+                {
+                  title: "Major technology initiatives require stronger oversight",
+                  desc: "Large programs such as system upgrades, platform modernizations, or digital initiatives need experienced executive leadership to stay on track."
+                },
+                {
+                  title: "Vendor ecosystems become complex and difficult to manage",
+                  desc: "Healthcare organizations need objective guidance to navigate competing vendor priorities and technology investments."
+                },
+                {
+                  title: "Executive teams need a trusted technology advisor",
+                  desc: "Leadership teams need a partner who can translate complex IT challenges into clear business decisions."
+                },
+                {
+                  title: "Technology risk is increasing",
+                  desc: "Security, operational, and governance risks often emerge when IT leadership structures are unclear or overstretched."
+                }
+              ].map((item, index) => {
+                const romanNumerals = ["i", "ii", "iii", "iv", "v", "vi", "vii"];
+                return (
+                  <li key={index} className="flex gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#348DF01F] text-[#348DF0] flex items-center justify-center text-xs font-bold mt-1">
+                      {romanNumerals[index]}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900">{item.title}</h4>
+                      <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-20">
@@ -27,21 +78,21 @@ const HomeContent = () => {
             icon={<Activity className="w-7 h-7 text-[#348DF0]" />}
             title="Strategic CIO Advisor"
             description="Strategic CIO Advisor services help healthcare leaders make confident technology decisions by providing experienced, independent CIO-level guidance on strategy, risk, and major initiatives."
-            link="/services"
+            link="/#strategic"
             linkText="Learn More →"
           />
           <ServicePillar
             icon={<Users className="w-7 h-7 text-[#348DF0]" />}
             title="Fractional CIO Leadership"
             description="Fractional CIO Leadership provides ongoing CIO-level leadership to help healthcare organizations guide technology strategy, oversee key initiatives, and strengthen IT governance."
-            link="/services"
+            link="/#fractional"
             linkText="Learn More →"
           />
           <ServicePillar
             icon={<BarChart2 className="w-7 h-7 text-[#348DF0]" />}
             title="Interim CIO Leadership"
             description="Interim CIO Leadership provides experienced executive technology guidance during CIO transitions to stabilize operations, guide critical decisions, and maintain momentum across the IT organization."
-            link="/services"
+            link="/#interim"
             linkText="Learn More →"
           />
         </div>

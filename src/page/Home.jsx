@@ -8,7 +8,7 @@ import Problems from "../components/Problems";
 import Services from "../components/Services";
 import Pricing from "../components/Pricing";
 import Why from "../components/Why";
-import AboutWendigo from "../components/AboutWendigo";
+import EntityRegistry from "../components/EntityRegistry";
 import CEOPerspective from "../components/CEOPerspective";
 import ExposureCTA from "../components/ExposureCTA";
 import Footer from "../components/Footer";
@@ -19,6 +19,14 @@ const Home = () => {
   useEffect(() => {
     if (location.state?.scrollTo === "test") {
       const el = document.getElementById("test");
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    } else if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const el = document.getElementById(id);
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: "smooth" });
@@ -126,7 +134,7 @@ const Home = () => {
       <Services />
       <Pricing />
       <Why />
-      <AboutWendigo />
+      <EntityRegistry type="organization" />
 
       <div id="test">
         <CEOPerspective />

@@ -32,25 +32,7 @@ const CIOServiceContent = () => {
                     </p>
                 </div>
 
-                {/* The Challenge */}
-                <div className="bg-gradient-to-br from-[#001224] to-[#001E3D] rounded-3xl p-8 md:p-12 lg:p-16 text-white mb-20">
-                    <div className="max-w-4xl mx-auto">
-                        <h3 className="text-2xl md:text-3xl font-bold mb-6">
-                            Why do Health Plans need specialized CIO advisory services?
-                        </h3>
-                        <div className="space-y-5 text-slate-300 text-lg leading-relaxed">
-                            <p>
-                                Health plans operate in one of the most complex technology environments in any industry. Between core administration platforms, claims processing systems, member-facing portals, regulatory compliance mandates, and an ever-expanding threat landscape — <strong className="text-white">payer organizations need CIO-caliber leadership</strong> to navigate these challenges effectively.
-                            </p>
-                            <p>
-                                Yet many health plans — particularly small to mid-market payers — either can't afford a full-time CIO, can't find one with the right industry expertise, or are stuck in a leadership transition that's leaving critical IT decisions unmade. The result? Projects stall. Vendors go unmanaged. Security risks accumulate. And the executive team loses confidence in IT's ability to deliver.
-                            </p>
-                            <p>
-                                <strong className="text-white">Healthcare CIO consulting</strong> through the Wendigo Advisors model solves this by placing a veteran <Link to="/about" className="text-[#348DF0] hover:underline">healthcare CIO advisor — Brian Damiani</Link> — inside your organization on a fractional basis. This is not a junior consultant or a generalist. This is a seasoned healthcare IT executive who has led IT transformations for health plans, managed payer platform migrations, and built governance structures that align technology with business strategy.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+ <div className="h-20" /> {/* Spacer instead of removed section */}
 
                 {/* What You Get */}
                 <div className="mb-20">
@@ -102,33 +84,79 @@ const CIOServiceContent = () => {
                 {/* Outcomes */}
                 <div className="text-center mb-12">
                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
-                        Outcomes for Health Plan Organizations
+                        Stronger Technology Leadership means Lower Operational Risk.
                     </h3>
                     <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-8">
-                        Healthcare CIO advisory services that deliver measurable, lasting impact.
+                        Our healthcare CIO advisory services deliver measurable results for health plans and payer systems.
                     </p>
                 </div>
 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                    {[
-                        "CIO-level leadership without the full-time executive cost",
-                        "Vendor accountability and optimized technology contracts",
-                        "Clear IT strategy aligned to health plan business objectives",
-                        "Stabilized operations and reduced technical debt",
-                        "Board-ready reporting and executive IT visibility",
-                        "Accelerated digital transformation and modernization"
-                    ].map((outcome, i) => (
-                        <div key={i} className="flex items-start gap-3 p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#348DF0] mt-0.5 flex-shrink-0" />
-                            <p className="text-slate-700 font-medium">{outcome}</p>
+                <div className="grid md:grid-cols-3 gap-8 mb-16">
+                    {/* Leadership & Strategy */}
+                    <div className="bg-[#F8FAFC] rounded-2xl p-7 border border-slate-100 flex flex-col">
+                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                            <Target className="w-7 h-7 text-[#348DF0]" />
                         </div>
-                    ))}
+                        <h4 className="text-xl font-bold text-slate-900 mb-4">Leadership & Strategy</h4>
+                        <ul className="space-y-4 flex-grow">
+                            {[
+                                "Technology roadmaps aligned with organizational strategy and objective.",
+                                "Leadership for digital transformation and modernization initiatives.",
+                                "A culture of accountability and ownership across the IT organization."
+                            ].map((item, i) => (
+                                <li key={i} className="flex items-start gap-3">
+                                    <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                                    <span className="text-slate-600 font-medium leading-relaxed">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Risk & Governance */}
+                    <div className="bg-[#F8FAFC] rounded-2xl p-7 border border-slate-100 flex flex-col">
+                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                            <Shield className="w-7 h-7 text-[#348DF0]" />
+                        </div>
+                        <h4 className="text-xl font-bold text-slate-900 mb-4">Risk & Governance</h4>
+                        <ul className="space-y-4 flex-grow">
+                            {[
+                                "Stronger cybersecurity and regulatory compliance posture.",
+                                "Improved vendor accountability and contract optimization.",
+                                "Stronger IT governance and executive decision frameworks."
+                            ].map((item, i) => (
+                                <li key={i} className="flex items-start gap-3">
+                                    <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                                    <span className="text-slate-600 font-medium leading-relaxed">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Operational Strength */}
+                    <div className="bg-[#F8FAFC] rounded-2xl p-7 border border-slate-100 flex flex-col">
+                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                            <TrendingUp className="w-7 h-7 text-[#348DF0]" />
+                        </div>
+                        <h4 className="text-xl font-bold text-slate-900 mb-4">Operational Strength</h4>
+                        <ul className="space-y-4 flex-grow">
+                            {[
+                                "Stabilized IT operations and reduced technical debt.",
+                                "Clear executive visibility into IT risks, costs, and capability gap.",
+                                "Improved collaboration between business and IT leadership."
+                            ].map((item, i) => (
+                                <li key={i} className="flex items-start gap-3">
+                                    <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                                    <span className="text-slate-600 font-medium leading-relaxed">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Bottom CTA */}
                 <div className="text-center">
                     <p className="text-slate-600 text-lg mb-6">
-                        Ready to bring experienced healthcare CIO leadership to your health plan?
+                        Ready to bring clarity and accountability to your technology environment?
                     </p>
                     <a
                         href="https://t.ly/7Jjhw"
@@ -136,7 +164,7 @@ const CIOServiceContent = () => {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-[#348DF0] hover:bg-[#267ce0] text-white font-medium py-3.5 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-0.5"
                     >
-                        Schedule a Free Working Session
+                        Get Strategic Insight
                     </a>
                 </div>
             </div>

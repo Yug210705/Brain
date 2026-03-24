@@ -49,7 +49,7 @@ const MarkerUnderline = ({ className = "" }) => {
 const Pricing = () => {
     const plans = [
         {
-            title: "Strategic Advisor",
+            title: "Strategic CIO Advisor",
             price: "Starting at $5,000 per month",
             frequency: "Approximately 20 hours per month",
             features: [
@@ -59,7 +59,7 @@ const Pricing = () => {
                 "System Reviews and Recommendations",
                 "Direct Collaboration with the Executive Team"
             ],
-            description: "Provides executive level guidance to help leaders understand the strengths and weaknesses of their IT function.",
+            description: "Strategic CIO Advisor services help healthcare leaders make confident technology decisions by providing experienced, independent CIO-level guidance on strategy, risk, and major initiatives.",
             outcomes: [
                 "Clear understanding of the current state of IT.",
                 "Business/IT Strategy Alignment Recommendations.",
@@ -67,7 +67,7 @@ const Pricing = () => {
             ]
         },
         {
-            title: "CIO Advisor",
+            title: "Fractional CIO Leadership",
             price: "Starting at $7,500 per month",
             frequency: "Approximately 30 hours per month",
             features: [
@@ -80,7 +80,7 @@ const Pricing = () => {
                 "Annual Board Presentation Support",
                 <React.Fragment>Utilizes the CIO Operating System framework (<a href="/cio-operating" className="text-[#348DF0] hover:underline">link to CIO Operating System page</a>)</React.Fragment>
             ],
-            description: "Increased involvement for to more effectively monitor risks and ensure IT is helping the organization meet its business objectives.",
+            description: "Fractional CIO Leadership provides ongoing CIO-level leadership to help healthcare organizations guide technology strategy, oversee key initiatives, and strengthen IT governance.",
             outcomes: [
                 "On-going Risk reviews and recommendations",
                 "Audit readiness",
@@ -88,7 +88,7 @@ const Pricing = () => {
             ]
         },
         {
-            title: "Virtual CIO",
+            title: "Interim CIO Leadership",
             price: "Starting at $15,000 per month",
             frequency: "Approximately 60 hours per month",
             features: [
@@ -98,7 +98,7 @@ const Pricing = () => {
                 "Mentoring to senior IT resources",
                 "Vendor Management framework"
             ],
-            description: "Full-scale CIO leadership as part of your executive team. Strategic direction and operational oversight, program execution, board reporting, and long-term transformation.",
+            description: "Interim CIO Leadership provides experienced executive technology guidance during CIO transitions to stabilize operations, guide critical decisions, and maintain momentum across the IT organization.",
             outcomes: [
                 <React.Fragment>Documented CIO Operating System Assessment (<a href="/cio-operating" className="text-[#348DF0] hover:underline">link to CIO Operating System page</a>)</React.Fragment>,
                 "Improved IT strategy planning and execution",
