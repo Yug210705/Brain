@@ -85,7 +85,7 @@ const Why = () => {
                         {/* grid-cols-2 creates the two columns.
     gap-6 (24px) or gap-8 (32px) provides the spacing between them.
   */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
                             {/* Card 1: Left Top */}
                             <div className="flex justify-center lg:justify-end">

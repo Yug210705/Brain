@@ -61,13 +61,10 @@ const AboutWendigo = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-40 items-center">
 
-        {/* --- LEFT SIDE: Image Card (Desktop only) --- */}
         <div className="hidden lg:flex justify-center lg:justify-end">
           <div
-            className="relative flex items-center justify-center overflow-hidden"
+            className="relative flex items-center justify-center overflow-hidden w-full max-w-[502px] aspect-[502/524]"
             style={{
-              width: "502px",
-              height: "524px",
               padding: "42px",
               borderRadius: "42px",
               gap: "10px",

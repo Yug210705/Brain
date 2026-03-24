@@ -108,7 +108,7 @@ const Problems = () => {
         </div>
 
         {/* PROBLEM CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative w-full mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative w-full mb-16">
           {problems.map((problem, index) => (
             <div
               key={index}
