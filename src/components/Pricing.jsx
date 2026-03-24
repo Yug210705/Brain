@@ -51,6 +51,7 @@ const Pricing = () => {
     const plans = [
         {
             title: "Strategic CIO Advisor",
+            price: "$5,000 per month",
             description: "Executive guidance for critical technology decisions",
             bestFor: "Best for organizations that need experienced CIO perspective to guide strategy, investments, and leadership discussions.",
             engagement: [
@@ -69,6 +70,7 @@ const Pricing = () => {
         },
         {
             title: "Fractional CIO Leadership",
+            price: "$7,500 per month",
             description: "Ongoing CIO leadership without hiring a full-time executive",
             bestFor: "Best for organizations that need consistent CIO-level leadership but do not require a full-time role.",
             engagement: [
@@ -87,6 +89,7 @@ const Pricing = () => {
         },
         {
             title: "Interim CIO Leadership",
+            price: "$15,000 per month",
             description: "Full-time CIO leadership during executive transitions",
             bestFor: "Best for organizations navigating a sudden CIO departure or major leadership transition.",
             engagement: [
@@ -150,10 +153,13 @@ const Pricing = () => {
                             {/* Removed Most Popular Labels per instructions */}
 
                             <div className="mb-6">
-                                <h3 className="font-inter font-bold text-[24px] leading-tight text-white mb-3">
+                                <h3 className="font-inter font-bold text-[24px] leading-tight text-white mb-1">
                                     {plan.title}
                                 </h3>
-                                <p className="text-blue-400 font-semibold text-sm mb-4 leading-snug">
+                                <div className="text-blue-400 font-bold text-lg mb-3">
+                                    {plan.price}
+                                </div>
+                                <p className="text-slate-400 font-medium text-sm mb-4 leading-snug italic">
                                     {plan.description}
                                 </p>
                                 <div className="pt-4 border-t border-slate-800">
