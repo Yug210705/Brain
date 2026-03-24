@@ -71,7 +71,7 @@ const Why = () => {
                         </p>
 
                         <a
-                            href="https://calendly.com/brian_damiani/working-session-30-min"
+                            href="https://t.ly/7Jjhw"
                             target="_blank"
                             rel="noopener noreferrer">
                             <button className="mt-0 w-[157px] h-[50px] px-[38px] py-[10px] bg-[#348DF0] hover:bg-blue-600 text-white font-semibold rounded-[50px] shadow-[0_10px_25px_-5px_rgba(59,130,246,0.5)] transition-all duration-200 transform hover:-translate-y-1 active:scale-95">

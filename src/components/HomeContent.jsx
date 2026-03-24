@@ -11,14 +11,14 @@ const HomeContent = () => {
 
         <div className="text-center mb-16">
           <span className="inline-flex px-4 py-1.5 text-xs md:text-sm font-medium text-blue-500 bg-[#348DF01F] border border-[#348DF080] rounded-full mb-6">
-            When Healthcare Leaders turn to Wendigo
+            When Health Plans Choose Wendigo Advisors
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
             CIO Advisory Services<br className="hidden md:block" />
             <span className="text-[#348DF0]">for Healthcare Organizations</span>
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-slate-600 leading-relaxed mb-10">
-            Wendigo Advisors is a specialized <strong>healthcare CIO advisory firm</strong> that delivers executive-level IT leadership exclusively to health plans, managed care organizations, and payer systems across the United States. Our founder, <Link to="/about" className="text-[#348DF0] hover:underline font-semibold">Brian Damiani</Link>, brings 25+ years of hands-on healthcare IT strategy experience to every engagement.
+            Wendigo Advisors is a specialized <strong>healthcare CIO advisory firm</strong> that delivers executive-level IT leadership exclusively to health plans, managed care organizations, and health systems across the United States. Our founder, <Link to="/about" className="text-[#348DF0] hover:underline font-semibold">Brian Damiani</Link>, brings 25+ years of hands-on healthcare IT strategy experience to every engagement.
           </p>
 
           <div className="max-w-4xl mx-auto text-left bg-[#F8FAFC] p-8 rounded-3xl border border-slate-100 mb-16">
@@ -181,7 +181,7 @@ const HomeContent = () => {
             Ready to bring clarity and accountability to your technology environment?
           </p>
           <a
-            href="https://calendly.com/brian_damiani/working-session-30-min"
+            href="https://t.ly/7Jjhw"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#348DF0] hover:bg-[#267ce0] text-white font-medium py-3.5 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-0.5"

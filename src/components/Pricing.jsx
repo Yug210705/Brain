@@ -135,9 +135,12 @@ const Pricing = () => {
 
                 {/* Pricing Cards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch mb-10">
-                    {plans.map((plan, index) => (
+                    {plans.map((plan, index) => {
+                        const planIds = ["strategic", "fractional", "interim"];
+                        return (
                         <div
                             key={index}
+                            id={planIds[index]}
                             className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 ${
                                 plan.isPopular 
                                 ? 'bg-[#001E3D] ring-4 ring-blue-500/30 scale-105 shadow-2xl z-20' 
@@ -204,7 +207,8 @@ const Pricing = () => {
                                 </a>
                             </div>
                         </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>
