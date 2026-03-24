@@ -201,7 +201,7 @@ function HeroContent() {
 
         <div className="flex flex-col items-center gap-5">
           <a
-            href="https://t.ly/7Jjhw"
+            href="https://calendly.com/brian_damiani/working-session-30-min"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -243,3 +243,4 @@ const FloatingElement = ({ children, top, left, right, rotate }) => {
     </div>
   );
 };
+

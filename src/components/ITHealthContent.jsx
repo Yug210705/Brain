@@ -137,7 +137,7 @@ const ITHealthContent = () => {
                         The IT health check is often the starting point for deeper healthcare CIO advisory engagements. Based on your diagnostic findings, Wendigo Advisors can provide ongoing leadership through our <Link to="/healthcare" className="text-[#348DF0] hover:underline font-semibold">CIO as a service for health plans</Link> model, or implement our <Link to="/cio-operating" className="text-[#348DF0] hover:underline font-semibold">CIO operating model for healthcare</Link> to create lasting governance and visibility.
                     </p>
                     <a
-                        href="https://t.ly/7Jjhw"
+                        href="https://calendly.com/brian_damiani/working-session-30-min"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-[#348DF0] hover:bg-[#267ce0] text-white font-medium py-3.5 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-0.5"
@@ -151,3 +151,4 @@ const ITHealthContent = () => {
 };
 
 export default ITHealthContent;
+

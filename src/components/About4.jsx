@@ -140,7 +140,7 @@ const App = () => {
               — <strong className="text-slate-800">it's cultural, <a href="/cio-operating" className="text-blue-600 underline hover:text-blue-800">strategic</a>,</strong> and <strong className="text-slate-800">human.</strong>
             </p>
 
-            <a href="https://t.ly/7Jjhw" target="_blank"
+            <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank"
               rel="noopener noreferrer" className="w-full sm:w-auto">
               <button className="group w-full sm:w-auto justify-center flex items-center gap-3 bg-[#2589FE] hover:bg-blue-600 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-[0_4px_14px_0_rgba(37,137,254,0.39)] hover:shadow-[0_6px_20px_rgba(37,137,254,0.23)] hover:-translate-y-0.5 active:translate-y-0 animate-cta-fade-in">
                 Book a Call

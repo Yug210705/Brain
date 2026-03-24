@@ -132,7 +132,7 @@ const CIOAdvisoryFirm = () => {
             </p>
 
             <p>
-                <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer">Schedule a free working session</a> with Brian Damiani to explore how a specialized CIO advisory firm can deliver the IT leadership your health plan needs.
+                <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noopener noreferrer">Schedule a free working session</a> with Brian Damiani to explore how a specialized CIO advisory firm can deliver the IT leadership your health plan needs.
             </p>
         </>
     );
@@ -154,3 +154,4 @@ const CIOAdvisoryFirm = () => {
 };
 
 export default CIOAdvisoryFirm;
+

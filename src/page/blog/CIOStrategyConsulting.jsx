@@ -134,7 +134,7 @@ const CIOStrategyConsulting = () => {
             </p>
 
             <p>
-                <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer">Schedule a free working session</a> with Brian Damiani to discuss your organization's CIO leadership needs and explore how experienced healthcare CIO advisory from Wendigo Advisors can help.
+                <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noopener noreferrer">Schedule a free working session</a> with Brian Damiani to discuss your organization's CIO leadership needs and explore how experienced healthcare CIO advisory from Wendigo Advisors can help.
             </p>
         </>
     );
@@ -156,3 +156,4 @@ const CIOStrategyConsulting = () => {
 };
 
 export default CIOStrategyConsulting;
+

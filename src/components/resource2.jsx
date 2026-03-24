@@ -124,7 +124,7 @@ const Card = ({ title, description, Icon, link }) => {
 
 /* ---------------- MAIN SECTION ---------------- */
 const FeaturedRes = () => {
-  const CALENDLY_URL = "https://t.ly/7Jjhw";
+  const CALENDLY_URL = "https://calendly.com/brian_damiani/working-session-30-min";
 
   const cards = [
     {

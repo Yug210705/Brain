@@ -186,7 +186,7 @@ const CEOPerspective = () => {
 
                     {/* Button */}
                     <a
-                        href="https://t.ly/7Jjhw"
+                        href="https://calendly.com/brian_damiani/working-session-30-min"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check, CheckCircle2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const MarkerUnderline = ({ className = "" }) => {
     const id =
@@ -54,7 +55,7 @@ const Pricing = () => {
             bestFor: "Executive level guidance to help leaders understand the strengths and weaknesses of their IT function.",
             engagement: [
                 "Advisory and Decision Support",
-                "Rapid IT Health Check Assessment",
+                <Link to="/ITservices" className="hover:text-blue-400 underline">Rapid IT Health Check Assessment</Link>,
                 "IT Strategy/Roadmap evaluation",
                 "System Reviews and Recommendations",
                 "Direct Collaboration with the Executive Team"
@@ -75,7 +76,7 @@ const Pricing = () => {
                 "Monthly Executive Calls & Working Sessions",
                 "Monthly Risk Reports & Quarterly Business Reviews",
                 "Annual Board Presentation Support",
-                "Utilizes the CIO Operating System framework"
+                <Link to="/cio-operating" className="hover:text-blue-400 underline">CIO Operating System framework</Link>
             ],
             outcomes: [
                 "Structured IT Governance & Reporting",
@@ -85,27 +86,27 @@ const Pricing = () => {
             isPopular: true
         },
         {
-            title: "Interim CIO Leadership",
-            description: "Quote upon request",
-            bestFor: "Organizations in leadership transition or facing major operational crises.",
+            title: "Virtual CIO",
+            description: "$15,000 per month (~60 hrs/mo)",
+            bestFor: "Full-scale CIO leadership as part of your executive team. Strategic direction and operational oversight, program execution, board reporting, and long-term transformation.",
             engagement: [
-                "Executive-level stability and IT leadership",
-                "Critical decision-making and oversight",
-                "Management of budgets, vendors, and teams",
-                "Preparation for permanent leadership transition",
-                "Stabilization of technical issues"
+                "Everything in Strategic & CIO Advisor plus:",
+                "Ad hoc advisory hours",
+                "Weekly Executive Calls",
+                "Mentoring to senior IT resources",
+                "Vendor Management framework"
             ],
             outcomes: [
-                "Stabilized IT Operations",
-                "Leadership continuity during search",
-                "Reduced risk during transition"
+                <Link to="/cio-operating" className="hover:text-blue-400 underline">Documented CIO Operating System Assessment</Link>,
+                "Improved IT strategy planning and execution",
+                "Improved vendor management functions"
             ],
             isPopular: false
         },
     ];
 
     return (
-        <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden font-sans bg-[#F2F9FF]">
+        <section id="pricing" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden font-sans bg-[#F2F9FF]">
 
             {/* BACKGROUND ELEMENTS */}
             <div className="absolute inset-0 pointer-events-none">
@@ -195,7 +196,7 @@ const Pricing = () => {
 
                             <div className="mt-auto pt-6">
                                 <a
-                                    href="https://t.ly/7Jjhw"
+                                    href="https://calendly.com/brian_damiani/working-session-30-min"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`block w-full text-center py-4 rounded-xl font-bold transition-all duration-200 ${

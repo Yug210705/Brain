@@ -159,7 +159,7 @@ const CIOServiceContent = () => {
                         Ready to bring clarity and accountability to your technology environment?
                     </p>
                     <a
-                        href="https://t.ly/7Jjhw"
+                        href="https://calendly.com/brian_damiani/working-session-30-min"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-[#348DF0] hover:bg-[#267ce0] text-white font-medium py-3.5 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-0.5"
@@ -173,3 +173,4 @@ const CIOServiceContent = () => {
 };
 
 export default CIOServiceContent;
+

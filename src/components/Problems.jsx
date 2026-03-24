@@ -142,7 +142,7 @@ const Problems = () => {
             Experienced CIO leadership brings clarity and control. Schedule a conversation to discuss your organization's technology leadership needs.
           </p>
           <a
-            href="https://t.ly/7Jjhw"
+            href="https://calendly.com/brian_damiani/working-session-30-min"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -157,3 +157,4 @@ const Problems = () => {
 };
 
 export default Problems;
+

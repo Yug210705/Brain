@@ -35,7 +35,7 @@ const ServicesSection = () => {
       image: "/h3.png",
       cta: "Book the Call",
       position: "left",
-      link: "https://t.ly/7Jjhw"
+      link: "https://calendly.com/brian_damiani/working-session-30-min"
     },
   ];
 
@@ -127,7 +127,7 @@ const CardItem = ({ service, align }) => {
               {service.description}
             </p>
 
-            <LinkWrapper href={service.link || "https://t.ly/7Jjhw"}>
+            <LinkWrapper href={service.link || "https://calendly.com/brian_damiani/working-session-30-min"}>
               <button className="w-full group/btn flex items-center justify-between pl-6 pr-2 py-2 rounded-full bg-[#08335e] hover:bg-[#0b4278] transition-all duration-300 border border-white/10 shadow-lg">
                 <span className="text-white font-medium text-sm md:text-base ml-2">
                   {service.cta}

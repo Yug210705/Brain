@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <a href="https://t.ly/7Jjhw" target="_blank" rel="noreferrer">
+          <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noreferrer">
             <button className="hidden sm:block bg-[#348DF0] text-white font-semibold py-3 px-8 rounded-full text-sm">
               Schedule a Conversation
             </button>
@@ -85,9 +85,10 @@ const Navbar = () => {
 
               {isMobileServicesOpen && (
                 <div className="flex flex-col items-center gap-4 mt-4 py-4 px-6 bg-slate-800/30 rounded-2xl w-full">
-                  <Link to="/#strategic" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Strategic CIO Advisor</Link>
-                  <Link to="/#fractional" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Fractional CIO Leadership</Link>
-                  <Link to="/#interim" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Interim CIO Leadership</Link>
+                  <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Free Working Session</a>
+                  <Link to="/#pricing" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Strategic Advisor</Link>
+                  <Link to="/#pricing" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">CIO Advisor</Link>
+                  <Link to="/#pricing" onClick={closeMobileMenu} className="text-xl text-slate-300 hover:text-white">Virtual CIO</Link>
                 </div>
               )}
             </div>
@@ -121,9 +122,10 @@ function NavItemWithDropdown({ label }) {
       <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-200" />
       <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-60 bg-[#001224]/95 border border-slate-700/50 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 backdrop-blur-xl overflow-hidden">
         <div className="py-3 flex flex-col">
-          <Link to="/#strategic" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Strategic CIO Advisor</Link>
-          <Link to="/#fractional" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Fractional CIO Leadership</Link>
-          <Link to="/#interim" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Interim CIO Leadership</Link>
+          <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noopener noreferrer" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Free Working Session</a>
+          <Link to="/#pricing" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Strategic Advisor</Link>
+          <Link to="/#pricing" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">CIO Advisor</Link>
+          <Link to="/#pricing" className="px-6 py-3 hover:bg-slate-800/50 text-slate-300 hover:text-white text-sm transition-colors">Virtual CIO</Link>
         </div>
       </div>
     </div>

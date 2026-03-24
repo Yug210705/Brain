@@ -168,7 +168,7 @@ const Card = ({ title, icon: Icon, description, isActive = false, link = "#" }) 
 };
 
 export default function App() {
-  const CALENDLY_LINK = "https://t.ly/7Jjhw";
+  const CALENDLY_LINK = "https://calendly.com/brian_damiani/working-session-30-min";
 
   const cards = [
     {

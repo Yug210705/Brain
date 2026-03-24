@@ -107,7 +107,7 @@ const Card = ({ title, description, Icon, link }) => {
 };
 
 const ComplimentaryTools = () => {
-  const CALENDLY_URL = "https://t.ly/7Jjhw";
+  const CALENDLY_URL = "https://calendly.com/brian_damiani/working-session-30-min";
 
   const cards = [
     {
@@ -115,7 +115,7 @@ const ComplimentaryTools = () => {
       description:
         "A 30-minute working session focused on a real technology or operational problem you’re facing—no sales pitch, just practical guidance and clarity.",
       icon: Coffee,
-      link: "https://t.ly/7Jjhw."
+      link: "https://calendly.com/brian_damiani/working-session-30-min."
     },
     {
       title: <>IT Health<br />Check</>,

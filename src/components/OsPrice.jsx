@@ -73,7 +73,7 @@ const Pricing = () => {
                         {/* Button Area */}
                         <div className="relative z-10 mt-8">
                             <a
-                                href="https://t.ly/7Jjhw"
+                                href="https://calendly.com/brian_damiani/working-session-30-min"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
