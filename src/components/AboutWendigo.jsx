@@ -161,9 +161,8 @@ const AboutWendigo = () => {
           </ul>
 
           {/* Button */}
-          {/* Button */}
           <a
-            href="https://t.ly/7Jjhw"
+            href="https://yourhealthcarecio.com"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 bg-[#348DF0] hover:bg-blue-600 text-white px-8 py-3.5 rounded-full font-medium transition-all shadow-lg shadow-blue-500/30"

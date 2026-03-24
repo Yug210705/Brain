@@ -49,56 +49,56 @@ const MarkerUnderline = ({ className = "" }) => {
 const Pricing = () => {
     const plans = [
         {
-            title: "Strategic CIO Advisor",
-            description: "Executive guidance for critical technology decisions",
-            bestFor: "Organizations that need experienced CIO perspective to guide strategy, investments, and leadership discussions.",
+            title: "Strategic Advisor",
+            description: "$5,000 per month (~20 hrs/mo)",
+            bestFor: "Executive level guidance to help leaders understand the strengths and weaknesses of their IT function.",
             engagement: [
-                "Monthly or periodic advisory support",
-                "Participation in executive leadership discussions",
-                "Strategic guidance on technology initiatives",
-                "Independent perspective on vendors and investments"
+                "Advisory and Decision Support",
+                "Rapid IT Health Check Assessment",
+                "IT Strategy/Roadmap evaluation",
+                "System Reviews and Recommendations",
+                "Direct Collaboration with the Executive Team"
             ],
             outcomes: [
-                "Clear technology strategy and priorities",
-                "Stronger business–IT alignment",
-                "More confident executive decision-making",
-                "Independent guidance on major technology investments"
+                "Clear understanding of the current state of IT",
+                "Strategy Alignment Recommendations",
+                "Improved decision making capabilities"
             ],
             isPopular: false
         },
         {
-            title: "Fractional CIO Leadership",
-            description: "Ongoing CIO leadership without hiring a full-time executive",
-            bestFor: "Organizations that need consistent CIO-level leadership but do not require a full-time role.",
+            title: "CIO Advisor",
+            description: "$7,500 per month (~30 hrs/mo)",
+            bestFor: "Healthcare organizations needing structured IT leadership without a full-time hire.",
             engagement: [
-                "One or more days per week of CIO leadership",
-                "Oversight of IT leadership and major initiatives",
-                "Technology roadmap development and execution",
-                "Vendor and partner strategy"
+                "IT Strategy planning & execution assistance",
+                "Monthly Executive Calls & Working Sessions",
+                "Monthly Risk Reports & Quarterly Business Reviews",
+                "Annual Board Presentation Support",
+                "Utilizes the CIO Operating System framework"
             ],
             outcomes: [
-                "Consistent executive technology leadership",
-                "Stronger IT governance and accountability",
-                "Technology initiatives moving forward with clear oversight",
-                "IT strategy translated into operational execution"
+                "Structured IT Governance & Reporting",
+                "Proactive Risk Management",
+                "Executive-level board support"
             ],
             isPopular: true
         },
         {
             title: "Interim CIO Leadership",
-            description: "Full-time CIO leadership during executive transitions",
-            bestFor: "Organizations navigating a sudden CIO departure or major leadership transition.",
+            description: "Quote upon request",
+            bestFor: "Organizations in leadership transition or facing major operational crises.",
             engagement: [
-                "Immediate executive leadership for the IT organization",
-                "Stabilization of operations and key initiatives",
-                "Leadership of the CIO search or transition process",
-                "Strategic and operational oversight during the transition period"
+                "Executive-level stability and IT leadership",
+                "Critical decision-making and oversight",
+                "Management of budgets, vendors, and teams",
+                "Preparation for permanent leadership transition",
+                "Stabilization of technical issues"
             ],
             outcomes: [
-                "Stable IT leadership during a critical transition",
-                "Reduced operational and technology risk",
-                "Continuity across projects, vendors, and teams",
-                "A stronger foundation for the incoming CIO"
+                "Stabilized IT Operations",
+                "Leadership continuity during search",
+                "Reduced risk during transition"
             ],
             isPopular: false
         },
