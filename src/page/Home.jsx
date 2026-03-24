@@ -5,7 +5,6 @@ import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero";
 import HomeContent from "../components/HomeContent";
 import Problems from "../components/Problems";
-import Problems from "../components/Problems";
 import Pricing from "../components/Pricing";
 import Why from "../components/Why";
 import AboutWendigo from "../components/AboutWendigo";
