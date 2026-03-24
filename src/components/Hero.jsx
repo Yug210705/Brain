@@ -85,7 +85,7 @@ function HeroContent() {
   return (
     <div className="relative flex-grow flex flex-col items-center justify-center pt-20 pb-20">
       {/* FLOATING ICONS (Background Decoration) */}
-      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-50">
+      <div className="hidden md:block absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-50">
         {/* Top Left - Shield */}
         <FloatingElement top="0%" left="3%" rotate="-12deg">
           <div className="w-[42px] h-[42px]">
@@ -169,7 +169,7 @@ function HeroContent() {
         </div>
 
         <h1
-          className="max-w-5xl mx-auto mb-10 text-3xl font-bold tracking-tight leading-[1.2] md:text-6xl lg:text-[4rem] text-white animate-fade-in-up"
+          className="max-w-5xl mx-auto mb-10 text-2xl sm:text-3xl font-bold tracking-tight leading-[1.2] md:text-6xl lg:text-[4rem] text-white animate-fade-in-up"
           style={{ transitionDelay: "200ms" }}
         >
           <span className="relative inline-block sm:whitespace-nowrap mr-2 md:mr-4 group">

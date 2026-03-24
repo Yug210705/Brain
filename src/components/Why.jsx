@@ -51,7 +51,7 @@ const Why = () => {
                         </div>
 
                         {/* Main Headline */}
-                        <h1 className="max-w-5xl mb-10 text-4xl font-bold leading-[1.2] md:text-5xl text-black">
+                        <h1 className="max-w-5xl mb-10 text-2xl sm:text-4xl font-bold leading-[1.2] md:text-5xl text-black">
                             <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
                                 <span className="text-gray-900 font-semibold font-[Inter]">The Impact of</span>{" "}
                             </span>
@@ -194,7 +194,7 @@ const Why = () => {
 };
 
 const StatsCard = ({ title, subtitle, desc }) => (
-    <div className="group relative p-8 w-[244px] h-[244px] rounded-[38px] bg-[#001325] before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(180deg,#CAE5FE_0%,rgba(0,143,248,0.64)_100%)] before:rounded-[38px] before:z-0 shadow-[0_20px_40px_-10px_rgba(30,58,138,0.4)] text-white overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+    <div className="group relative p-8 w-full max-w-[244px] aspect-square rounded-[38px] bg-[#001325] before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(180deg,#CAE5FE_0%,rgba(0,143,248,0.64)_100%)] before:rounded-[38px] before:z-0 shadow-[0_20px_40px_-10px_rgba(30,58,138,0.4)] text-white overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
         <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none rounded-[38px]"></div>
         <div className="relative z-10 flex flex-col h-full justify-between gap-6">
             <div>

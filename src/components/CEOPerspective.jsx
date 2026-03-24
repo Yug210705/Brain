@@ -167,7 +167,7 @@ const CEOPerspective = () => {
                     </span>
 
                     {/* Headline */}
-                    <h2 className="text-[52px] leading-none font-bold tracking-[-2px] text-[#00000052] mb-6 font-inter">
+                    <h2 className="text-3xl sm:text-4xl lg:text-[52px] leading-none font-bold tracking-[-2px] text-[#00000052] mb-6 font-inter">
                         What{" "}
                         <span className="relative inline-block text-slate-900 z-10">
                             Healthcare CEOs Say
