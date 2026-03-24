@@ -82,7 +82,7 @@ const Home = () => {
                     { "@id": "https://www.wendigoadvisors.com/cio-operating#webpage" },
                     { "@id": "https://www.wendigoadvisors.com/about#webpage" },
                     { "@id": "https://www.wendigoadvisors.com/insights#webpage" },
-                    { "@id": "https://www.wendigoadvisors.com/pricing#webpage" },
+                    { "@id": "https://www.wendigoadvisors.com/services#webpage" },
                     { "@id": "https://www.wendigoadvisors.com/resources#webpage" }
                   ]
                 },

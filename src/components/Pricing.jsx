@@ -50,65 +50,62 @@ const Pricing = () => {
     const plans = [
         {
             title: "Strategic CIO Advisor",
-            price: "Starting at $5,000 per month",
-            frequency: "Approximately 20 hours per month",
-            features: [
-                "Advisory and Decision Support",
-                <React.Fragment>Rapid IT Health Check Assessment (<a href="/ITservices" className="text-[#348DF0] hover:underline">link to IT Health Assessment page</a>)</React.Fragment>,
-                "IT Strategy/Roadmap evaluation",
-                "System Reviews and Recommendations",
-                "Direct Collaboration with the Executive Team"
+            description: "Executive guidance for critical technology decisions",
+            bestFor: "Organizations that need experienced CIO perspective to guide strategy, investments, and leadership discussions.",
+            engagement: [
+                "Monthly or periodic advisory support",
+                "Participation in executive leadership discussions",
+                "Strategic guidance on technology initiatives",
+                "Independent perspective on vendors and investments"
             ],
-            description: "Strategic CIO Advisor services help healthcare leaders make confident technology decisions by providing experienced, independent CIO-level guidance on strategy, risk, and major initiatives.",
             outcomes: [
-                "Clear understanding of the current state of IT.",
-                "Business/IT Strategy Alignment Recommendations.",
-                "Improved decision making capabilities related to IT Systems"
-            ]
+                "Clear technology strategy and priorities",
+                "Stronger business–IT alignment",
+                "More confident executive decision-making",
+                "Independent guidance on major technology investments"
+            ],
+            isPopular: false
         },
         {
             title: "Fractional CIO Leadership",
-            price: "Starting at $7,500 per month",
-            frequency: "Approximately 30 hours per month",
-            features: [
-                <React.Fragment><span className="font-semibold text-white">Includes everything in the Strategic Advisor offer plus:</span></React.Fragment>,
-                "IT Strategy planning and execution assistance",
-                "Monthly Executive Calls",
-                "Monthly Working Sessions",
-                "Monthly Risk Reports",
-                "Quarterly Business Reviews",
-                "Annual Board Presentation Support",
-                <React.Fragment>Utilizes the CIO Operating System framework (<a href="/cio-operating" className="text-[#348DF0] hover:underline">link to CIO Operating System page</a>)</React.Fragment>
+            description: "Ongoing CIO leadership without hiring a full-time executive",
+            bestFor: "Organizations that need consistent CIO-level leadership but do not require a full-time role.",
+            engagement: [
+                "One or more days per week of CIO leadership",
+                "Oversight of IT leadership and major initiatives",
+                "Technology roadmap development and execution",
+                "Vendor and partner strategy"
             ],
-            description: "Fractional CIO Leadership provides ongoing CIO-level leadership to help healthcare organizations guide technology strategy, oversee key initiatives, and strengthen IT governance.",
             outcomes: [
-                "On-going Risk reviews and recommendations",
-                "Audit readiness",
-                "Reduced operational and regulatory risk"
-            ]
+                "Consistent executive technology leadership",
+                "Stronger IT governance and accountability",
+                "Technology initiatives moving forward with clear oversight",
+                "IT strategy translated into operational execution"
+            ],
+            isPopular: true
         },
         {
             title: "Interim CIO Leadership",
-            price: "Starting at $15,000 per month",
-            frequency: "Approximately 60 hours per month",
-            features: [
-                <React.Fragment><span className="font-semibold text-white">Includes everything in Strategic Advisor and CIO Advisor plus:</span></React.Fragment>,
-                "Ad hoc advisory hours",
-                "Weekly Executive Calls",
-                "Mentoring to senior IT resources",
-                "Vendor Management framework"
+            description: "Full-time CIO leadership during executive transitions",
+            bestFor: "Organizations navigating a sudden CIO departure or major leadership transition.",
+            engagement: [
+                "Immediate executive leadership for the IT organization",
+                "Stabilization of operations and key initiatives",
+                "Leadership of the CIO search or transition process",
+                "Strategic and operational oversight during the transition period"
             ],
-            description: "Interim CIO Leadership provides experienced executive technology guidance during CIO transitions to stabilize operations, guide critical decisions, and maintain momentum across the IT organization.",
             outcomes: [
-                <React.Fragment>Documented CIO Operating System Assessment (<a href="/cio-operating" className="text-[#348DF0] hover:underline">link to CIO Operating System page</a>)</React.Fragment>,
-                "Improved IT strategy planning and execution",
-                "Improved vendor management functions"
-            ]
+                "Stable IT leadership during a critical transition",
+                "Reduced operational and technology risk",
+                "Continuity across projects, vendors, and teams",
+                "A stronger foundation for the incoming CIO"
+            ],
+            isPopular: false
         },
     ];
 
     return (
-        <section className="relative py-10 px-4 sm:px-6 lg:px-8 overflow-hidden font-sans bg-[#F2F9FF]">
+        <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden font-sans bg-[#F2F9FF]">
 
             {/* BACKGROUND ELEMENTS */}
             <div className="absolute inset-0 pointer-events-none">
@@ -125,88 +122,93 @@ const Pricing = () => {
                 {/* Header */}
                 <div className="text-center mb-20">
                     <span className="inline-block px-[16px] py-[4px] rounded-[30px] bg-[#348DF01F] border border-[#348DF080] text-sm font-medium text-blue-500 mb-6 text-center">
-                        Pricing
+                        Our Services
                     </span>
-                    <h2 className="max-w-5xl mx-auto mb-10 text-2xl sm:text-4xl font-bold leading-[1.2] md:text-5xl text-black">
-                        <span className="text-gray-600 font-semibold font-[Inter]">Flexible</span>{" "}
-                        <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
-                            <span className="relative z-10 font-[Inter]">CIO Leadership</span>
-                            <MarkerUnderline />
-                        </span>
-                        <span>for Healthcare Organizations</span>
+                    <h2 className="max-w-5xl mx-auto mb-10 text-3xl sm:text-4xl font-bold leading-[1.2] md:text-5xl text-black">
+                        <span className="text-gray-900 font-bold font-[Inter]">Flexible CIO Leadership</span>{" "}
+                        <span className="text-gray-500">for Healthcare Organizations</span>
                     </h2>
-                    <p className="font-tt-hoves font-medium text-[20px] leading-[100%] max-w-3xl mx-auto tracking-[0px] text-[#00000080]">
+                    <p className="font-tt-hoves font-medium text-[20px] leading-relaxed max-w-3xl mx-auto text-[#00000080]">
                         Wendigo provides flexible engagement options designed to give CEOs clarity, stability, and long-term strategic direction.
                     </p>
                 </div>
 
                 {/* Pricing Cards Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch mb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mb-10">
                     {plans.map((plan, index) => (
                         <div
                             key={index}
-                            id={plan.title.toLowerCase().split(' ')[0]}
-                            className={`relative rounded-none lg:rounded-none xl:rounded-[12px] p-8 flex flex-col justify-start transition-all duration-300 bg-[#1E293B] text-slate-300 border border-slate-700 shadow-xl`}
+                            className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 ${
+                                plan.isPopular 
+                                ? 'bg-[#001E3D] ring-4 ring-blue-500/30 scale-105 shadow-2xl z-20' 
+                                : 'bg-[#001325] border border-slate-800 shadow-xl'
+                            } text-slate-300 h-full`}
                         >
-                            <div className="mb-6 flex-shrink-0">
-                                <h3 className="font-inter font-bold text-[24px] leading-tight text-white mb-2">
+                            {plan.isPopular && (
+                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-bold tracking-wide uppercase">
+                                    Strategic Focus
+                                </div>
+                            )}
+
+                            <div className="mb-6">
+                                <h3 className="font-inter font-bold text-[24px] leading-tight text-white mb-3">
                                     {plan.title}
                                 </h3>
-                                <div className="font-inter font-bold text-[#EAB308] text-[20px] mb-1">
-                                    {plan.price}
-                                </div>
-                                <div className="font-inter font-medium text-sm text-slate-400">
-                                    {plan.frequency}
-                                </div>
-                            </div>
-
-                            <ul className="space-y-3 mb-8 flex-shrink-0">
-                                {plan.features.map((feature, i) => (
-                                    <li key={i} className="flex items-start gap-3">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-slate-300 mt-2 flex-shrink-0"></div>
-                                        <span className="font-ttHoves font-medium text-[14px] leading-relaxed text-slate-300">
-                                            {feature}
-                                        </span>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <div className="mb-8">
-                                <p className={`font-ttHoves font-medium text-[14px] leading-relaxed text-slate-400 mb-6 flex-grow`}>
+                                <p className="text-blue-400 font-semibold text-sm mb-4 leading-snug">
                                     {plan.description}
                                 </p>
+                                <div className="pt-4 border-t border-slate-800">
+                                    <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Best For:</p>
+                                    <p className="text-sm leading-relaxed text-slate-300">
+                                        {plan.bestFor}
+                                    </p>
+                                </div>
                             </div>
 
-                            <div className="mt-auto">
-                                <h4 className="font-bold text-white text-[15px] mb-3">Outcomes:</h4>
+                            <div className="mb-8">
+                                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4">Typical Engagement:</h4>
                                 <ul className="space-y-3">
-                                    {plan.outcomes.map((outcome, i) => (
+                                    {plan.engagement.map((item, i) => (
                                         <li key={i} className="flex items-start gap-3">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-slate-300 mt-2 flex-shrink-0"></div>
-                                            <span className="font-ttHoves font-medium text-[14px] leading-relaxed text-slate-300">
-                                                {outcome}
+                                            <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></div>
+                                            <span className="text-sm leading-relaxed text-slate-300 font-medium">
+                                                {item}
                                             </span>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
+
+                            <div className="mb-8">
+                                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4">Core Outcomes:</h4>
+                                <ul className="space-y-3">
+                                    {plan.outcomes.map((item, i) => (
+                                        <li key={i} className="flex items-start gap-3">
+                                            <CheckCircle2 className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                                            <span className="text-sm leading-relaxed text-slate-300 font-medium">
+                                                {item}
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div className="mt-auto pt-6">
+                                <a
+                                    href="https://t.ly/7Jjhw"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`block w-full text-center py-4 rounded-xl font-bold transition-all duration-200 ${
+                                        plan.isPopular 
+                                        ? 'bg-blue-500 hover:bg-blue-600 text-white shadow-lg shadow-blue-500/20' 
+                                        : 'bg-slate-800 hover:bg-slate-700 text-white border border-slate-700'
+                                    }`}
+                                >
+                                    Get Started Now
+                                </a>
+                            </div>
                         </div>
                     ))}
-                </div>
-
-                {/* Footer Link Component */}
-                <div className="text-center pb-10">
-                    <a
-                        href="https://t.ly/7Jjhw"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-[#348DF0] hover:bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-[0_10px_25px_-5px_rgba(59,130,246,0.5)] transition-all duration-200 transform hover:-translate-y-1 active:scale-95"
-                    >
-                        Meet with us to discuss your needs.
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-5 h-5 transition-transform">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                    </a>
                 </div>
             </div>
         </section>
