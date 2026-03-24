@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import HomeContent from "../components/HomeContent";
 import Problems from "../components/Problems";
 import Pricing from "../components/Pricing";
+import Services from "../components/Services";
 import Why from "../components/Why";
 import AboutWendigo from "../components/AboutWendigo";
 import EntityRegistry from "../components/EntityRegistry";
@@ -132,6 +133,7 @@ const Home = () => {
       <HomeContent />
       <Problems />
       <Pricing />
+      <Services />
       <AboutWendigo />
       <Why />
       <EntityRegistry type="organization" />

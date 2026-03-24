@@ -50,56 +50,56 @@ const MarkerUnderline = ({ className = "" }) => {
 const Pricing = () => {
     const plans = [
         {
-            title: "Strategic Advisor",
-            description: "$5,000 per month (~20 hrs/mo)",
-            bestFor: "Executive level guidance to help leaders understand the strengths and weaknesses of their IT function.",
+            title: "Strategic CIO Advisor",
+            description: "Executive guidance for critical technology decisions",
+            bestFor: "Best for organizations that need experienced CIO perspective to guide strategy, investments, and leadership discussions.",
             engagement: [
-                "Advisory and Decision Support",
-                <Link to="/ITservices" className="hover:text-blue-400 underline">Rapid IT Health Check Assessment</Link>,
-                "IT Strategy/Roadmap evaluation",
-                "System Reviews and Recommendations",
-                "Direct Collaboration with the Executive Team"
+                "Monthly or periodic advisory support",
+                "Participation in executive leadership discussions",
+                "Strategic guidance on technology initiatives",
+                "Independent perspective on vendors and investments"
             ],
             outcomes: [
-                "Clear understanding of the current state of IT",
-                "Strategy Alignment Recommendations",
-                "Improved decision making capabilities"
+                "Clear technology strategy and priorities",
+                "Stronger business–IT alignment",
+                "More confident executive decision-making",
+                "Independent guidance on major technology investments"
             ],
             isPopular: false
         },
         {
-            title: "CIO Advisor",
-            description: "$7,500 per month (~30 hrs/mo)",
-            bestFor: "Healthcare organizations needing structured IT leadership without a full-time hire.",
+            title: "Fractional CIO Leadership",
+            description: "Ongoing CIO leadership without hiring a full-time executive",
+            bestFor: "Best for organizations that need consistent CIO-level leadership but do not require a full-time role.",
             engagement: [
-                "IT Strategy planning & execution assistance",
-                "Monthly Executive Calls & Working Sessions",
-                "Monthly Risk Reports & Quarterly Business Reviews",
-                "Annual Board Presentation Support",
-                <Link to="/cio-operating" className="hover:text-blue-400 underline">CIO Operating System framework</Link>
+                "One or more days per week of CIO leadership",
+                "Oversight of IT leadership and major initiatives",
+                "Technology roadmap development and execution",
+                "Vendor and partner strategy"
             ],
             outcomes: [
-                "Structured IT Governance & Reporting",
-                "Proactive Risk Management",
-                "Executive-level board support"
+                "Consistent executive technology leadership",
+                "Stronger IT governance and accountability",
+                "Technology initiatives moving forward with clear oversight",
+                "IT strategy translated into operational execution"
             ],
             isPopular: true
         },
         {
-            title: "Virtual CIO",
-            description: "$15,000 per month (~60 hrs/mo)",
-            bestFor: "Full-scale CIO leadership as part of your executive team. Strategic direction and operational oversight, program execution, board reporting, and long-term transformation.",
+            title: "Interim CIO Leadership",
+            description: "Full-time CIO leadership during executive transitions",
+            bestFor: "Best for organizations navigating a sudden CIO departure or major leadership transition.",
             engagement: [
-                "Everything in Strategic & CIO Advisor plus:",
-                "Ad hoc advisory hours",
-                "Weekly Executive Calls",
-                "Mentoring to senior IT resources",
-                "Vendor Management framework"
+                "Immediate executive leadership for the IT organization",
+                "Stabilization of operations and key initiatives",
+                "Leadership of the CIO search or transition process",
+                "Strategic and operational oversight during the transition period"
             ],
             outcomes: [
-                <Link to="/cio-operating" className="hover:text-blue-400 underline">Documented CIO Operating System Assessment</Link>,
-                "Improved IT strategy planning and execution",
-                "Improved vendor management functions"
+                "Stable IT leadership during a critical transition",
+                "Reduced operational and technology risk",
+                "Continuity across projects, vendors, and teams",
+                "A stronger foundation for the incoming CIO"
             ],
             isPopular: false
         },
@@ -126,8 +126,7 @@ const Pricing = () => {
                         Our Services
                     </span>
                     <h2 className="max-w-5xl mx-auto mb-10 text-3xl sm:text-4xl font-bold leading-[1.2] md:text-5xl text-black">
-                        <span className="text-gray-900 font-bold font-[Inter]">Flexible CIO Leadership</span>{" "}
-                        <span className="text-gray-500">for Healthcare Organizations</span>
+                        Flexible CIO Leadership for Healthcare Organizations
                     </h2>
                     <p className="font-tt-hoves font-medium text-[20px] leading-relaxed max-w-3xl mx-auto text-[#00000080]">
                         Wendigo provides flexible engagement options designed to give CEOs clarity, stability, and long-term strategic direction.
@@ -145,11 +144,7 @@ const Pricing = () => {
                                 : 'bg-[#001325] border border-slate-800 shadow-xl'
                             } text-slate-300 h-full`}
                         >
-                            {plan.isPopular && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-bold tracking-wide uppercase">
-                                    Strategic Focus
-                                </div>
-                            )}
+                            {/* Removed Most Popular Labels per instructions */}
 
                             <div className="mb-6">
                                 <h3 className="font-inter font-bold text-[24px] leading-tight text-white mb-3">
@@ -181,7 +176,7 @@ const Pricing = () => {
                             </div>
 
                             <div className="mb-8">
-                                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4">Core Outcomes:</h4>
+                                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4">Outcomes:</h4>
                                 <ul className="space-y-3">
                                     {plan.outcomes.map((item, i) => (
                                         <li key={i} className="flex items-start gap-3">
@@ -196,7 +191,7 @@ const Pricing = () => {
 
                             <div className="mt-auto pt-6">
                                 <a
-                                    href="https://calendly.com/brian_damiani/working-session-30-min"
+                                    href="https://t.ly/7Jjhw"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`block w-full text-center py-4 rounded-xl font-bold transition-all duration-200 ${
