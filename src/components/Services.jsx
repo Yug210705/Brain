@@ -153,39 +153,21 @@ const Services = () => {
                     </div>
 
                     {/* Right Column: Services List (Now vertically centered) */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-6">
                         {services.map((service) => (
                             <div
                                 key={service.id}
-                                onClick={() => setActiveId(service.id)}
-                                className=""
+                                className="bg-white rounded-2xl p-6 shadow-md border border-gray-100 transition-all duration-300"
                             >
-                                {activeId === service.id ? (
-                                    /* Active Card */
-                                    <div className="bg-white rounded-2xl p-6 shadow-md border border-gray-100 transition-all duration-300 transform scale-[1.02]">
-                                        <div className="flex justify-between items-start mb-2">
-                                            <div className="flex items-center gap-3">
-                                                <span className="text-[#348DF0] font-bold">{service.icon}</span>
-                                                <h3 className="font-inter font-bold text-[20px] text-gray-900">
-                                                    {service.title}
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <p className="font-tt-hoves font-normal text-[14px] leading-relaxed text-[#000000BF] mt-2">
-                                            {service.description}
-                                        </p>
-                                    </div>
-                                ) : (
-                                    /* Inactive List Item */
-                                    <div className="group flex items-center gap-3 p-4 rounded-xl hover:bg-white/60 transition-colors duration-200">
-                                        <span className="text-gray-400 group-hover:text-[#348DF0] transition-colors">
-                                            {service.icon}
-                                        </span>
-                                        <h3 className="text-lg font-bold text-gray-500 group-hover:text-gray-900 transition-colors">
-                                            {service.title}
-                                        </h3>
-                                    </div>
-                                )}
+                                <div className="flex items-center gap-3 mb-4">
+                                    <span className="text-[#348DF0] font-bold">{service.icon}</span>
+                                    <h3 className="font-inter font-bold text-[20px] text-gray-900">
+                                        {service.title}
+                                    </h3>
+                                </div>
+                                <p className="font-tt-hoves font-normal text-[14px] leading-relaxed text-[#000000BF]">
+                                    {service.description}
+                                </p>
                             </div>
                         ))}
                     </div>
